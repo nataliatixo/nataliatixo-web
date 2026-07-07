@@ -9,12 +9,15 @@ Wix has no export feature, so this is a two-step migration: mirror the live site
 - [x] Mirror the live Wix site (done 2026-07-07: 123 HTML pages + ~1.5GB media in `mirror/`)
 - [x] Review mirrored content, decide structure — Hugo, bilingual EN/RU, ~74 project/bio pages + 33 blog posts
 - [x] Rebuild pages here — Hugo site scaffolded, content extracted via `scripts/extract_content.py`
+- [x] Style pass — minimalistic greyscale/light-grey theme (`static/css/style.css`)
+- [x] Full EN/RU blog parity — all 33 posts now exist in both languages (translated by Claude where no native version existed; see `CLAUDE.md` for which posts are original vs. translated)
+- [ ] Videos — 5 Wix videos have placeholder markers (`{{< video >}}` shortcode) on their posts; waiting on you to upload them (YouTube/Vimeo) and drop in the URLs
 - [ ] Deploy to GitHub Pages (workflow ready in `.github/workflows/deploy.yml`; Pages source still needs to be switched to "GitHub Actions" in repo Settings — not done yet, needs your go-ahead)
 - [ ] Point custom domain `nataliatixo.com` (CNAME file already in `static/CNAME`; DNS not configured yet) and retire the Wix subscription
 
 ## Stack
 
-Hugo, hand-written minimal layouts (no third-party theme). Bilingual EN (default) / RU via Hugo's multilingual support, with a client-side script that auto-redirects Russian-language browsers on first visit and a manual toggle that persists via `localStorage`. See `CLAUDE.md` for the full content structure and extraction pipeline.
+Hugo, hand-written minimal layouts (no third-party theme), minimalistic greyscale design. Bilingual EN (default) / RU via Hugo's multilingual support, with a client-side script that auto-redirects Russian-language browsers on first visit and a manual toggle that persists via `localStorage`. See `CLAUDE.md` for the full content structure and extraction pipeline.
 
 ## Local development
 

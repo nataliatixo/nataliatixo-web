@@ -2,6 +2,7 @@
 title: "Essay \"The case at the border\""
 date: 2020-03-05
 categories: ["poetical"]
+translationKey: "case-at-the-border"
 ---
 
 <p>Essay has been published on e-publication<a href="http://nidacolony.lt/images/docs/February_2020/DOTT-pub-small2.pdf?fbclid=IwAR0WYAbSgnYmUCk-QZLwXoNmvZ7OgB7sG8EgtP1YPEBWVc1Bs1N5ZVTtVtM">Dwelling on the Threshold</a>as the result of workshop in<a href="https://4cs-conflict-conviviality.eu/post/workshop-vilnius">Nida Art Colony</a></p>

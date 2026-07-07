@@ -1,5 +1,5 @@
 ---
-title: "Рассказ о проектах для студентов школы Пайдея"
+title: "A talk about my projects for students of the Paideia school"
 date: 2020-07-01
 categories: ["research"]
 ---

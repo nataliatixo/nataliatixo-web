@@ -1,0 +1,8 @@
+{{ $src := .Get "src" }}
+{{ if $src }}
+<div class="video-embed">
+  <iframe src="{{ $src }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{{ else }}
+<p class="video-placeholder">[Video pending upload — {{ .Get "note" }}]</p>
+{{ end }}

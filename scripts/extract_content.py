@@ -117,6 +117,13 @@ def rewrite_href(href: str) -> str:
     stem = stem[:-5] if stem.endswith(".html") else stem
     stem = stem.strip("/")
 
+    m = re.match(r"^blog-1/hashtags/(.+)$", stem)
+    if m:
+        return f"/ru/tags/{m.group(1)}/" if is_ru else f"/tags/{m.group(1)}/"
+    m = re.match(r"^blog-1/categories/(.+)$", stem)
+    if m:
+        return f"/ru/categories/{m.group(1)}/" if is_ru else f"/categories/{m.group(1)}/"
+
     if stem.startswith("post/"):
         slug = stem[len("post/"):]
         target = SLUG_TO_URL.get(f"post:{slug}")
@@ -165,6 +172,13 @@ def clean_block(node) -> list[tuple[str, str]]:
     return out
 
 
+def video_placeholder(node) -> str:
+    src = node.get("src", "")
+    m = re.search(r"([a-z.]+\.wixstatic\.com)/video/([^/]+)/", src)
+    note = f"source: {m.group(1)}/video/{m.group(2)}/" if m else "source: unknown"
+    return f'{{{{< video note="{esc_attr(note)}" >}}}}'
+
+
 def extract_media_and_text(nodes, dest_dir: Path) -> str:
     used = {}
     emitted_images = set()
@@ -177,6 +191,8 @@ def extract_media_and_text(nodes, dest_dir: Path) -> str:
                 emitted_images.add(local)
                 alt = node.get("alt", "") or ""
                 parts.append(f'<img src="{local}" alt="{esc_attr(alt)}">')
+        elif node.name == "video":
+            parts.append(video_placeholder(node))
         else:
             for key, html in clean_block(node):
                 if key not in seen_text:
@@ -191,7 +207,7 @@ def extract_project_body(soup: BeautifulSoup, dest_dir: Path) -> str:
         return ""
     nodes = container.find_all(
         lambda t: (t.get("data-testid") == "richTextElement" and not t.find_parent(id="SITE_HEADER") and not t.find_parent(id="SITE_FOOTER"))
-        or (t.name == "img" and not t.find_parent(attrs={"data-testid": "richTextElement"}))
+        or (t.name in ("img", "video") and not t.find_parent(attrs={"data-testid": "richTextElement"}))
     )
     return extract_media_and_text(nodes, dest_dir)
 
@@ -200,7 +216,7 @@ def extract_post_body(soup: BeautifulSoup, dest_dir: Path) -> str:
     container = soup.find(attrs={"data-hook": "post-description"})
     if not container:
         return ""
-    nodes = container.find_all(lambda t: t.name in ("p", "img") and not (t.name == "img" and t.find_parent("p")))
+    nodes = container.find_all(lambda t: t.name in ("p", "img", "video") and not (t.name == "img" and t.find_parent("p")))
     return extract_media_and_text(nodes, dest_dir)
 
 
@@ -238,7 +254,17 @@ def project_page(rel_html: str, dest_dir: Path, filename: str):
     write_bundle(dest_dir, filename, title, body)
 
 
-def post_page(rel_html: str, dest_dir: Path, filename: str, categories: list[str], tags: list[str]):
+# Posts that are independently-written EN/RU pairs of the same piece under
+# different slugs (the author published them as two separate Wix blog posts
+# rather than one bilingual post) - linked via translationKey rather than
+# machine-translated, since a native version already exists.
+TRANSLATION_PAIRS = {
+    "essay-the-case-at-the-border": "case-at-the-border",
+    "эссе-случай-на-границе": "case-at-the-border",
+}
+
+
+def post_page(rel_html: str, dest_dir: Path, categories: list[str], tags: list[str], slug: str = ""):
     path = SITE / rel_html
     if not path.exists():
         print(f"  MISSING {rel_html}", file=sys.stderr)
@@ -254,6 +280,12 @@ def post_page(rel_html: str, dest_dir: Path, filename: str, categories: list[str
         fm += "categories: [" + ", ".join(yaml_str(c) for c in categories) + "]\n"
     if tags:
         fm += "tags: [" + ", ".join(yaml_str(t) for t in tags) + "]\n"
+    if slug in TRANSLATION_PAIRS:
+        fm += f"translationKey: {yaml_str(TRANSLATION_PAIRS[slug])}\n"
+    # Language is decided by actual content, not the (sometimes Latin-script)
+    # URL slug - e.g. the post at /post/information is titled "Информационное"
+    # and is entirely in Russian despite its English-looking slug.
+    filename = "index.ru.md" if is_cyrillic(title + body) else "index.md"
     write_bundle(dest_dir, filename, title, body, fm)
 
 
@@ -446,10 +478,9 @@ def main():
             continue
         print("post:", slug)
         post_dir = CONTENT / "posts" / slug
-        filename = "index.ru.md" if is_cyrillic(slug) else "index.md"
         cats = categories_map.get(slug, [])
         tags = tags_map.get(slug, [])
-        post_page(f"{rel}.html", post_dir, filename, cats, tags)
+        post_page(f"{rel}.html", post_dir, cats, tags, slug=slug)
 
 
 if __name__ == "__main__":

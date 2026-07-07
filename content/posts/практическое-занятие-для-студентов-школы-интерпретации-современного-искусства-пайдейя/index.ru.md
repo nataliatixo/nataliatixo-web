@@ -3,4 +3,4 @@ title: "Практические проекты для школы интерпр
 date: 2020-04-11
 ---
 
-
+{{< video note="source: video.wixstatic.com/video/6253e7_180f68e5497e4588badb4dc8b65b018b/" >}}

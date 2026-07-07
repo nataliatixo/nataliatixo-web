@@ -8,7 +8,9 @@ A Wix-to-GitHub-Pages migration for https://nataliatixo.wixsite.com/nataliatixoe
 
 ## Current state
 
-Content has been mirrored (`mirror/`, gitignored) and extracted into a working Hugo site (`content/`, `layouts/`, `hugo.toml`). `hugo server -D` builds cleanly. Not yet done: switching the repo's GitHub Pages source to "GitHub Actions" and pointing DNS at `nataliatixo.com` — both require your explicit go-ahead since they touch shared/external systems, so ask before doing them. See README.md's status checklist for the up-to-date picture.
+Content has been mirrored (`mirror/`, gitignored) and extracted into a working Hugo site (`content/`, `layouts/`, `hugo.toml`), with a minimalistic greyscale/light-grey style pass and full EN/RU blog parity (see below). `hugo server -D` builds cleanly. Not yet done: uploading the 5 Wix videos somewhere external and filling in their embed URLs, and switching the repo's GitHub Pages source to "GitHub Actions" plus pointing DNS at `nataliatixo.com` — the latter two require explicit go-ahead since they touch shared/external systems, so ask before doing them. See README.md's status checklist for the up-to-date picture.
+
+**Important:** `content/` now contains hand-authored files that don't exist in the mirror (translations, `translationKey` links — see below). Never `rm -rf content` before re-running `extract_content.py`; the script only overwrites files it actually generates from mirrored HTML, so re-running it in place is safe, but wiping the directory first would destroy that hand-authored content.
 
 ## Stack
 
@@ -16,7 +18,7 @@ Hugo (no npm, no third-party theme — hand-written minimal layouts). Local Hugo
 
 ### Bilingual (EN default / RU)
 
-Single `content/` dir shared by both languages (`contentDir` the same for both in `hugo.toml`); English is the unsuffixed file (`index.md`), Russian is `.ru.md`. Not every page has both — the ~74 project/bio pages are full EN↔RU pairs, but blog posts are single-language (29 Russian-only, 7 English-only in the original) and simply have no counterpart file.
+Single `content/` dir shared by both languages (`contentDir` the same for both in `hugo.toml`); English is the unsuffixed file (`index.md`), Russian is `.ru.md`. The ~74 project/bio pages are full EN↔RU pairs from the original mirror. Blog posts were originally single-language on Wix (29 Russian-only, 7 English-only) — full EN/RU parity across all 33 posts was added by hand-translating the missing side (Claude-translated; not proofread by a native speaker, flag this if precision matters for a specific post, especially the experimental/wordplay poems noted inline via translator's-note `<em>` blocks). One pair — `essay-the-case-at-the-border` / `эссе-случай-на-границе` — is the author's own independently-written bilingual pair under two different slugs, linked via a shared `translationKey` front-matter value (see `TRANSLATION_PAIRS` in `extract_content.py`) rather than machine-translated, since a native version already existed.
 
 Language switching is entirely client-side (`layouts/partials/lang-redirect.html` + the toggle script at the bottom of `layouts/partials/footer.html`): first visit checks `navigator.language`, redirects to the Russian translation only if one exists for that exact page (via Hugo's `.Translations`), and remembers the choice in `localStorage['lang-pref']` so it never fights a manual toggle. The toggle itself (in `layouts/partials/header.html`) falls back to the other language's homepage when the current page has no translation.
 
@@ -41,6 +43,7 @@ What it does, per mirrored HTML page:
 - Internal links get rewritten from old Wix URLs to new Hugo paths via a slug map built from the manifest (`SLUG_TO_URL` in the script); external links pass through unchanged.
 - Images: Wix stores originals as resized variants only (`static.wixstatic.com/media/<id>/v1/fill|fit/w_NNN,.../<id>`, no true full-res original in the static mirror) — the script picks the largest available width per unique media ID and copies it into the page bundle, deduping so the same image isn't copied/emitted twice even if it appears as both a body image and a gallery thumbnail.
 - Blog post dates come from the first `data-hook="time-ago"` element on the page; categories/tags are cross-referenced from the `blog-1/categories/*` and `blog-1/hashtags/*` listing pages (built once into a slug → categories/tags map).
+- Videos: Wix embeds them as `<video src>` inside `data-hook="video-player"`. Since the decision was to host video externally (not in git/Pages), the script emits a `{{< video note="source: ..." >}}` shortcode placeholder instead of a file — see `layouts/shortcodes/video.html`. Once a video is uploaded (YouTube/Vimeo), replace the shortcode with `{{< video src="https://...embed-url..." >}}` in the affected post(s).
 
 `--only slug1,slug2,...` limits a run to specific slugs (matches section slugs, child slugs, or post slugs) — useful for testing template/extraction changes without re-running everything.
 

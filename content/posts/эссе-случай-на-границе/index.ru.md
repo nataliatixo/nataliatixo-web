@@ -2,6 +2,7 @@
 title: "Эссе \"Случай на границе\""
 date: 2020-03-05
 categories: ["poetical"]
+translationKey: "case-at-the-border"
 ---
 
 <p>Эссе было опубликовано на английском языке в публикации<a href="http://nidacolony.lt/images/docs/February_2020/DOTT-pub-small2.pdf?fbclid=IwAR0WYAbSgnYmUCk-QZLwXoNmvZ7OgB7sG8EgtP1YPEBWVc1Bs1N5ZVTtVtM">Dwelling on the Threshold</a>по результатам<a href="https://4cs-conflict-conviviality.eu/post/workshop-vilnius">ворк-шопа в Nida Art Colony</a></p>

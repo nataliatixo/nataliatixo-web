@@ -1,9 +1,9 @@
 ---
-title: "Информационное"
+title: "Informational"
 date: 2010-03-06
 categories: ["poetical"]
 ---
 
-<p>Сайнс-фикшн рассказ в поэтической форме, написанный двумя авторами - Натальей Тихоновой и Наталией Родионовой в 2010-м году.</p>
+<p>A sci-fi story in poetic form, written by two authors — Natalia Tikhonova and Natalia Rodionova — in 2010.</p>
 
-<p>Серия стихов описывает утопический мир, где "в следствие флуктуации или невычисляемого искажения" мир заселили фантомные сущности, воплотившиеся из обрывков информации. Лирические герои серии, авторы - в форме тайных детективных переписок, предупреждений, инструкций, описывают процессы фентези-вселенной и представляют населяющих ее героев -- переселенная песня, зеркало, радость, футляр для ножа и так далее.</p>
+<p>The cycle of poems describes a utopian world where, "as a result of a fluctuation or an incalculable distortion," the world became populated by phantom entities embodied out of scraps of information. The lyrical protagonists of the cycle — the authors themselves — describe, in the form of secret detective correspondence, warnings, and instructions, the processes of this fantasy universe and introduce the characters who inhabit it: a resettled song, a mirror, joy, a knife case, and so on.</p>

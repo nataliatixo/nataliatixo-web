@@ -9,4 +9,4 @@ tags: ["research", "texts"]
 
 <p><a href="http://aroundart.org/2019/07/21/konteksty-i-chuvstva-v-tsifrovom-prostranstve-beseda-natal-i-tihonovoj-i-mihaila-stepanova/">Почитать на сайте www.aroundart.org</a></p>
 
-<p><a href="../../../../blog-1/hashtags/research.html">#research</a><a href="../../../../blog-1/hashtags/texts.html">#texts</a></p>
+<p><a href="/ru/tags/research/">#research</a><a href="/ru/tags/texts/">#texts</a></p>

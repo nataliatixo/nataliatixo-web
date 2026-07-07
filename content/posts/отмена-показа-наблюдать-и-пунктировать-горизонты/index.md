@@ -1,5 +1,5 @@
 ---
-title: "Отмена показа \"Наблюдать и пунктировать\": Горизонты"
+title: "Cancellation of the screening \"To Observe and Punctuate\": Horizons"
 date: 2020-04-02
 ---
 
