@@ -404,22 +404,16 @@ def normalize_post_slug(href: str) -> str:
     return tail.split("/")[-1]
 
 
-def load_category_membership() -> dict[str, list[str]]:
+def load_category_membership() -> tuple[dict[str, list[str]], dict[str, list[str]]]:
     membership: dict[str, list[str]] = {}
 
     def add(slug_key, value):
         membership.setdefault(slug_key, []).append(value)
 
-    cat_files = {
-        "poetical": "poetical",
-        "research": "research",
-        "english": None,
-        "русский": None,
-    }
-    for fname, cat in cat_files.items():
-        if cat is None:
-            continue
-        path = SITE / "blog-1" / "categories" / f"{fname}.html"
+    # Wix also had "english" and "русский" category listings, deliberately not
+    # extracted: language is handled by the EN/RU site split, not a taxonomy.
+    for cat in ["poetical", "research"]:
+        path = SITE / "blog-1" / "categories" / f"{cat}.html"
         if not path.exists():
             continue
         soup = load(path)

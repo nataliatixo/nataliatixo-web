@@ -1,1 +1,5 @@
 nataliatixo.com
+# NOTE: this file does nothing today. GitHub Actions-based Pages deploys
+# (deploy.yml) ignore CNAME files - the custom domain is configured in the
+# repo Settings > Pages plus DNS, not here (see the comment in hugo.toml).
+# Kept only as a record of the intended domain.

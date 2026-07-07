@@ -4,12 +4,7 @@
   <div class="content">{{ partial "content.html" . }}</div>
   <ul class="post-list">
     {{ range .Pages.ByDate.Reverse }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        <span class="post-title">{{ .Title }}</span>
-        {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
-      </a>
-    </li>
+    {{ partial "post-li.html" (dict "page" . "dateFormat" "2 January 2006") }}
     {{ end }}
   </ul>
 </article>

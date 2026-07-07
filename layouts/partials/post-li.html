@@ -1,0 +1,8 @@
+{{- /* One <li> in a .post-list. Takes (dict "page" $p "dateFormat" "2006"). */ -}}
+{{- $p := .page -}}
+<li>
+  <a href="{{ $p.RelPermalink }}">
+    <span class="post-title">{{ $p.Title }}</span>
+    {{ if not $p.Date.IsZero }}<time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format .dateFormat }}</time>{{ end }}
+  </a>
+</li>
