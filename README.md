@@ -13,8 +13,8 @@ Wix has no export feature, so this is a two-step migration: mirror the live site
 - [x] Style pass — minimalistic greyscale/light-grey theme (`static/css/style.css`)
 - [x] Full EN/RU blog parity — all 33 posts now exist in both languages (translated by Claude where no native version existed; see `CLAUDE.md` for which posts are original vs. translated)
 - [ ] Videos — 5 Wix videos have placeholder markers (`{{< video >}}` shortcode) on their posts; waiting on you to upload them (YouTube/Vimeo) and drop in the URLs
-- [ ] Deploy to GitHub Pages (workflow ready in `.github/workflows/deploy.yml`; Pages source still needs to be switched to "GitHub Actions" in repo Settings — not done yet, needs your go-ahead)
-- [ ] Point custom domain `nataliatixo.com` (CNAME file already in `static/CNAME`; DNS not configured yet) and retire the Wix subscription
+- [x] Deploy to GitHub Pages — live at https://minombreespablo.github.io/nataliatixo-web/ (temporary project URL; `baseURL` in `hugo.toml` points there until the custom domain exists)
+- [ ] Point custom domain `nataliatixo.com` (set the domain in repo Settings → Pages, configure DNS, switch `baseURL` back — see the comment in `hugo.toml`) and retire the Wix subscription
 
 ## Stack
 
@@ -30,8 +30,8 @@ hugo server -D
 
 1. **Extract**: `scripts/mirror.sh` runs `wget --mirror` against the live site into `mirror/` (gitignored — it's a scratch archive, not the deployable site), including Wix's CDN hosts so media downloads alongside HTML. Also manually export anything only in the Wix dashboard: blog drafts, form submissions, full-res media library originals (the mirror only captures web-resolution images, not true originals).
 2. **Rebuild**: `scripts/extract_content.py` (Python, BeautifulSoup) parses the mirror and writes Hugo content bundles under `content/`. Re-run it if the mirror is refreshed; it overwrites existing content files.
-3. **Deploy**: push to `main` — `.github/workflows/deploy.yml` builds with Hugo and deploys via GitHub Actions. Requires: repo Settings → Pages → Source → "GitHub Actions" (one-time, not yet done).
-4. **Domain**: `static/CNAME` already contains `nataliatixo.com`. Still needed: point DNS (A records to GitHub's Pages IPs, CNAME record for `www`), then enable HTTPS enforcement in Pages settings.
+3. **Deploy**: push to `main` — `.github/workflows/deploy.yml` builds with Hugo and deploys via GitHub Actions. Done: live at the temporary project URL above.
+4. **Domain**: set `nataliatixo.com` in repo Settings → Pages, point DNS (A records to GitHub's Pages IPs, CNAME record for `www`), enable HTTPS enforcement, and switch `baseURL` in `hugo.toml` back to `https://nataliatixo.com/`. (`static/CNAME` is just a record of the intended domain — Actions-based deploys ignore that file.)
 5. Only cancel the Wix subscription after everything is verified live.
 
 Note: anything dynamic on the Wix site (contact forms, bookings, member areas) has no static equivalent — forms can move to Formspree/mailto; anything more interactive needs a third-party service or gets dropped.
