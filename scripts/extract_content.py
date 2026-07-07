@@ -238,7 +238,7 @@ def write_bundle(dir_path: Path, filename: str, title: str, body: str, extra_fro
     (dir_path / filename).write_text(front + body + "\n", encoding="utf-8")
 
 
-def project_page(rel_html: str, dest_dir: Path, filename: str):
+def project_page(rel_html: str, dest_dir: Path, filename: str, extra_front_matter: str = ""):
     path = SITE / rel_html
     if not path.exists():
         print(f"  MISSING {rel_html}", file=sys.stderr)
@@ -251,7 +251,7 @@ def project_page(rel_html: str, dest_dir: Path, filename: str):
         # rather than write a blank placeholder page.
         print(f"  SKIP (404 on live site): {rel_html}", file=sys.stderr)
         return
-    write_bundle(dest_dir, filename, title, body)
+    write_bundle(dest_dir, filename, title, body, extra_front_matter)
 
 
 # Posts that are independently-written EN/RU pairs of the same piece under
@@ -264,7 +264,7 @@ TRANSLATION_PAIRS = {
 }
 
 
-def post_page(rel_html: str, dest_dir: Path, categories: list[str], tags: list[str], slug: str = ""):
+def post_page(rel_html: str, dest_dir: Path, categories: list[str], tags: list[str], slug: str = "", group: str = ""):
     path = SITE / rel_html
     if not path.exists():
         print(f"  MISSING {rel_html}", file=sys.stderr)
@@ -274,6 +274,8 @@ def post_page(rel_html: str, dest_dir: Path, categories: list[str], tags: list[s
     body = extract_post_body(soup, dest_dir)
     date = post_date(soup)
     fm = ""
+    if group:
+        fm += f"group: {group}\n"
     if date:
         fm += f"date: {date}\n"
     if categories:
@@ -304,68 +306,87 @@ CURATORIAL = [
     "kopiya-procartistination-branches", "tracktrack-exhibitions",
 ]
 
-POETICAL = ["poeticaltexts", "research"]
+# Wix blog posts, redistributed into the site's Texts and Archive sections
+# by what they actually are, not the Wix app they lived in:
+# - texts/poetry: creative writing (poems, prose pieces)
+# - texts/essays: essays and published texts written by the author
+# - archive: dated activity log (talks, lectures, announcements, mediations)
+#   plus interviews *about* the author (press, not authored texts).
+#
+# NOTE: post/2018/12/06/presentation-of-babushkas-project-in-dk-rose,
+# post/2018/12/06/review-of-exhibition-letter-to-future, and
+# post/2018/12/27/presentation-about-digital-artdigest are 404 on the
+# live Wix site itself (confirmed via literal "404" markers in the
+# mirrored HTML) - dropped rather than extracted as empty placeholders.
 
-POSTS = [
-    # NOTE: post/2018/12/06/presentation-of-babushkas-project-in-dk-rose,
-    # post/2018/12/06/review-of-exhibition-letter-to-future, and
-    # post/2018/12/27/presentation-about-digital-artdigest are 404 on the
-    # live Wix site itself (confirmed via literal "404" markers in the
-    # mirrored HTML) - dropped rather than extracted as empty placeholders.
-    "post/2019/12/13/статья-интервью-для-aroundartorg-с-михаилом-степановым",
-    "post/artist-talk-в-студии-studio-4-413-для-студентов-школы-пайдейя",
+TEXTS_POETRY = [
     "post/cтих-война-как",
     "post/essay-the-case-at-the-border",
     "post/information",
-    "post/publication-in-final-documentation-after-dwelling-on-the-threshold-worshop-in-nida-art-colony",
-    "post/studio-studies-project-for-curatorial-forum",
-    "post/беседа-с-михаилом-степановым-для-aroundart-org-часть-вторая",
-    "post/блиц-внесение-поправок-в-федеральный-закон-об-образовании-для-spectate-ru",
     "post/весна-не-наступает-экспериментальная-поэзия",
-    "post/интервью-для-artuzel-про-видео-арт-клуб",
-    "post/интервью-для-крапивы",
-    "post/конференция-цифровое-и-человеческое",
-    "post/лекция-онлайн-платформы-как-гибридные-формы-выставок-в-целинном",
-    "post/медиация-по-выставке-pangardenia-в-рамках-ars-electronica-в-air-itmo-gallery-с-инсталляцией-цветок",
-    "post/онлайн-платформы-как-гибридные-формы-выставок-вcтупление",
-    "post/отмена-показа-наблюдать-и-пунктировать-горизонты",
     "post/планеты",
     "post/послушайте-экспериментальная-поэзия",
     "post/постапокалиптическое-стихотворение-сети-для-сетьсолидарности-поэтыпротивпыток-всепротивпыток",
-    "post/практическое-занятие-для-студентов-школы-интерпретации-современного-искусства-пайдейя",
-    "post/презентация-с-картинками-для-портфолио-ревью",
-    "post/прокартистинаторский-бранч-в-галерее-люда",
-    "post/рассказ-о-проектах-для-студентов-школы-пайдея",
     "post/случай-во-время-городского-праздника",
     "post/стихи-перевертыши",
     "post/стих-человек-это",
     "post/стих-экспликация-к-выставке-кожаные-ублюдки-действие-у",
+    "post/эссе-случай-на-границе",
+]
+
+TEXTS_ESSAYS = [
+    "post/блиц-внесение-поправок-в-федеральный-закон-об-образовании-для-spectate-ru",
+    "post/онлайн-платформы-как-гибридные-формы-выставок-вcтупление",
     "post/татьяна-кирьянова-екатерина-соколовская-и-наталья-тихонова-справочник",
     "post/текст-к-выставке-таты-гориан-ужас-вы-находитесь-здесь-для-aroundart-org",
-    "post/участие-в-конференции-дар-и-труд-в-искусстве",
     "post/экспликация-к-выставке-кожаные-ублюдки-действие-у",
-    "post/эссе-случай-на-границе",
+]
+
+ARCHIVE_POSTS = [
+    "post/artist-talk-в-студии-studio-4-413-для-студентов-школы-пайдейя",
+    "post/publication-in-final-documentation-after-dwelling-on-the-threshold-worshop-in-nida-art-colony",
+    "post/studio-studies-project-for-curatorial-forum",
+    "post/конференция-цифровое-и-человеческое",
+    "post/лекция-онлайн-платформы-как-гибридные-формы-выставок-в-целинном",
+    "post/медиация-по-выставке-pangardenia-в-рамках-ars-electronica-в-air-itmo-gallery-с-инсталляцией-цветок",
+    "post/отмена-показа-наблюдать-и-пунктировать-горизонты",
+    "post/практическое-занятие-для-студентов-школы-интерпретации-современного-искусства-пайдейя",
+    "post/презентация-с-картинками-для-портфолио-ревью",
+    "post/прокартистинаторский-бранч-в-галерее-люда",
+    "post/рассказ-о-проектах-для-студентов-школы-пайдея",
+    "post/участие-в-конференции-дар-и-труд-в-искусстве",
+]
+
+# Interviews *about* the author - live at /press/<slug>/ (a section kept out
+# of the nav) and are surfaced as a "Press" list on the About page.
+PRESS = [
+    "post/2019/12/13/статья-интервью-для-aroundartorg-с-михаилом-степановым",
+    "post/беседа-с-михаилом-степановым-для-aroundart-org-часть-вторая",
+    "post/интервью-для-artuzel-про-видео-арт-клуб",
+    "post/интервью-для-крапивы",
 ]
 
 
 def build_slug_map() -> dict[str, tuple[str, str | None]]:
     m: dict[str, tuple[str, str | None]] = {
         "nataliatixoeng": ("/", "/ru/"),
-        "artisticprojects": ("/artistic-objects/", "/ru/artistic-objects/"),
-        "curatorial": ("/curatorial/", "/ru/curatorial/"),
-        "poetical": ("/poetical/", "/ru/poetical/"),
-        "blog-1": ("/posts/", "/ru/posts/"),
-        "random-pictures": ("/posts/random-pictures/", "/ru/posts/random-pictures/"),
+        "artisticprojects": ("/projects/", "/ru/projects/"),
+        "curatorial": ("/projects/", "/ru/projects/"),
+        "poetical": ("/texts/", "/ru/texts/"),
+        "blog-1": ("/archive/", "/ru/archive/"),
+        "random-pictures": ("/archive/random-pictures/", "/ru/archive/random-pictures/"),
     }
-    for slug in ARTISTIC_OBJECTS:
-        m[slug] = (f"/artistic-objects/{slug}/", f"/ru/artistic-objects/{slug}/")
-    for slug in CURATORIAL:
-        m[slug] = (f"/curatorial/{slug}/", f"/ru/curatorial/{slug}/")
-    for slug in POETICAL:
-        m[slug] = (f"/poetical/{slug}/", f"/ru/poetical/{slug}/")
-    for rel in POSTS:
+    for slug in ARTISTIC_OBJECTS + CURATORIAL:
+        m[slug] = (f"/projects/{slug}/", f"/ru/projects/{slug}/")
+    for rel in TEXTS_POETRY + TEXTS_ESSAYS:
         slug = rel.split("/")[-1]
-        m[f"post:{slug}"] = (f"/posts/{slug}/", None)
+        m[f"post:{slug}"] = (f"/texts/{slug}/", None)
+    for rel in ARCHIVE_POSTS:
+        slug = rel.split("/")[-1]
+        m[f"post:{slug}"] = (f"/archive/{slug}/", None)
+    for rel in PRESS:
+        slug = rel.split("/")[-1]
+        m[f"post:{slug}"] = (f"/press/{slug}/", None)
     return m
 
 
@@ -438,49 +459,59 @@ def main():
         write_bundle(CONTENT, "_index.md", "About", body_en)
         write_bundle(CONTENT, "_index.ru.md", "О себе", body_ru)
 
-    sections = [
-        ("artistic-objects", "artisticprojects", "Artistic Objects and Non-Objects", ARTISTIC_OBJECTS),
-        ("curatorial", "curatorial", "Curatorial Projects", CURATORIAL),
-        ("poetical", "poetical", "Texts", POETICAL),
-    ]
+    # --- projects (artistic objects + curatorial, one section) ---
+    projects_dir = CONTENT / "projects"
+    if wanted("projects"):
+        print("projects")
+        write_bundle(projects_dir, "_index.md", "Projects", "")
+        write_bundle(projects_dir, "_index.ru.md", "Проекты", "")
 
-    for section_slug, index_file, index_title, children in sections:
-        section_dir = CONTENT / section_slug
-        if wanted(section_slug):
-            print(section_slug)
-            write_bundle(section_dir, "_index.md", index_title, "")
-            write_bundle(section_dir, "_index.ru.md", index_title, "")
-
+    for group, children in [("artistic", ARTISTIC_OBJECTS), ("curatorial", CURATORIAL)]:
         for child in children:
             if not wanted(child):
                 continue
-            child_dir = section_dir / child
+            child_dir = projects_dir / child
             print(" ", child)
-            project_page(f"{child}.html", child_dir, "index.md")
-            project_page(f"{child}?lang=ru.html", child_dir, "index.ru.md")
+            project_page(f"{child}.html", child_dir, "index.md", f"group: {group}\n")
+            project_page(f"{child}?lang=ru.html", child_dir, "index.ru.md", f"group: {group}\n")
 
-    # --- blog ---
-    if wanted("posts-index"):
-        print("posts-index")
-        write_bundle(CONTENT / "posts", "_index.md", "Blog", "")
+    # --- texts + archive + press ---
+    if wanted("texts-index"):
+        print("texts-index")
+        write_bundle(CONTENT / "texts", "_index.md", "Texts", "")
+        write_bundle(CONTENT / "texts", "_index.ru.md", "Тексты", "")
+    if wanted("archive-index"):
+        print("archive-index")
+        write_bundle(CONTENT / "archive", "_index.md", "Archive", "")
+        write_bundle(CONTENT / "archive", "_index.ru.md", "Архив", "")
+    if wanted("press-index"):
+        print("press-index")
+        write_bundle(CONTENT / "press", "_index.md", "Press", "")
+        write_bundle(CONTENT / "press", "_index.ru.md", "Пресса", "")
 
     if wanted("random-pictures"):
         print("random-pictures")
-        rp_dir = CONTENT / "posts" / "random-pictures"
+        rp_dir = CONTENT / "archive" / "random-pictures"
         project_page("random-pictures.html", rp_dir, "index.md")
         project_page("random-pictures?lang=ru.html", rp_dir, "index.ru.md")
 
     categories_map, tags_map = load_category_membership()
 
-    for rel in POSTS:
-        slug = rel.split("/")[-1]
-        if not wanted(slug):
-            continue
-        print("post:", slug)
-        post_dir = CONTENT / "posts" / slug
-        cats = categories_map.get(slug, [])
-        tags = tags_map.get(slug, [])
-        post_page(f"{rel}.html", post_dir, cats, tags, slug=slug)
+    for section, group, rels in [
+        ("texts", "poetry", TEXTS_POETRY),
+        ("texts", "essays", TEXTS_ESSAYS),
+        ("archive", "", ARCHIVE_POSTS),
+        ("press", "", PRESS),
+    ]:
+        for rel in rels:
+            slug = rel.split("/")[-1]
+            if not wanted(slug):
+                continue
+            print("post:", slug)
+            post_dir = CONTENT / section / slug
+            cats = categories_map.get(slug, [])
+            tags = tags_map.get(slug, [])
+            post_page(f"{rel}.html", post_dir, cats, tags, slug=slug, group=group)
 
 
 if __name__ == "__main__":

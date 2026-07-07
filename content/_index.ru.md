@@ -44,7 +44,7 @@ title: "О себе"
 апрель, 2019<br>
 www.nplusonerooms.info<br></p>
 
-<p><a href="/ru/curatorial/artgarbage-coop/">ArtGar(b)ageCoop</a><br>
+<p><a href="/ru/projects/artgarbage-coop/">ArtGar(b)ageCoop</a><br>
 апрель, 2018 – настоящее<br></p>
 
 <p><a href="http://www.museum.ru/N69838">Communication Management Unit</a><br>
@@ -54,15 +54,15 @@ www.nplusonerooms.info<br></p>
 <p>Персональные выставки</p>
 
 <p><br>
-2019<a href="/ru/artistic-objects/sometimes-behave-so-strangely/">Иногда ведет себя так странно</a>, FFTN, Санкт-Петербург</p>
+2019<a href="/ru/projects/sometimes-behave-so-strangely/">Иногда ведет себя так странно</a>, FFTN, Санкт-Петербург</p>
 
-<p>2018<a href="/ru/artistic-objects/babushka-s/">Бабушкас</a>,  ДК Розы, Санкт-Петербург</p>
+<p>2018<a href="/ru/projects/babushka-s/">Бабушкас</a>,  ДК Розы, Санкт-Петербург</p>
 
-<p>2017<a href="/ru/artistic-objects/no-words-no-war/">Нет слов/ нет войны</a>,  Каринарника, Словения</p>
+<p>2017<a href="/ru/projects/no-words-no-war/">Нет слов/ нет войны</a>,  Каринарника, Словения</p>
 
-<p>2016<a href="/ru/artistic-objects/somethingnew/">Что-то новое</a>,  FFTN Gallery,Санкт-Петербург</p>
+<p>2016<a href="/ru/projects/somethingnew/">Что-то новое</a>,  FFTN Gallery,Санкт-Петербург</p>
 
-<p>2016<a href="/ru/artistic-objects/the-decay-time-of-mettastable-state/">Время распада метастабильных состояний</a>,  лаборадория Интимное место, Санкт-Петербург</p>
+<p>2016<a href="/ru/projects/the-decay-time-of-mettastable-state/">Время распада метастабильных состояний</a>,  лаборадория Интимное место, Санкт-Петербург</p>
 
 <p>Групповые выставки</p>
 
@@ -70,90 +70,90 @@ www.nplusonerooms.info<br></p>
 
 <p>8-10 ноября, cо-курирование двухдневного радио <a href="https://garagemca.org/ru/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">"Мечты и надежды", Московская версия</a>, музей Гараж, Москва</p>
 
-<p>3,4,16,17 октября, <a href="/ru/artistic-objects/on-line/">перформанс "On line"</a>для выставки <a href="http://kuryokhin.net/impulseexhibition">Импульс</a>, ЦСИ им. Курехина</p>
+<p>3,4,16,17 октября, <a href="/ru/projects/on-line/">перформанс "On line"</a>для выставки <a href="http://kuryokhin.net/impulseexhibition">Импульс</a>, ЦСИ им. Курехина</p>
 
-<p>3-6 октября,  <a href="/ru/artistic-objects/you-can-touch-it/">Вы можете это потрогать</a>, зины Бабушкас, "Путешествие на Большой Север в поисках кратера Другой Розы<br>
+<p>3-6 октября,  <a href="/ru/projects/you-can-touch-it/">Вы можете это потрогать</a>, зины Бабушкас, "Путешествие на Большой Север в поисках кратера Другой Розы<br>
 по компасу ЛибреЛуч", ДК Розы, Санкт-Петербург</p>
 
 <p>4,5,6, октября -  программа открытых студий, <a href="http://curatorialforum.art">Кураторский форум</a>, Санкт-Петербург</p>
 
-<p>июль, <a href="/ru/artistic-objects/heaven/">Рай</a>, Gamma Festival, Санкт-Петербург</p>
+<p>июль, <a href="/ru/projects/heaven/">Рай</a>, Gamma Festival, Санкт-Петербург</p>
 
-<p>апрель,  <a href="/ru/artistic-objects/academy/">Академия</a>, Левелс, Завод им. Степана Разина, Санкт-Петербург</p>
+<p>апрель,  <a href="/ru/projects/academy/">Академия</a>, Левелс, Завод им. Степана Разина, Санкт-Петербург</p>
 
-<p>февраль - март, <a href="/ru/artistic-objects/no-words-no-war/">Нет слов/нет войны,</a> Периферический взгляд, Trieste, Italy<br></p>
+<p>февраль - март, <a href="/ru/projects/no-words-no-war/">Нет слов/нет войны,</a> Периферический взгляд, Trieste, Italy<br></p>
 
 <p>2018</p>
 
-<p>7-е октября, <a href="/posts/information/">Информационное,</a>   Failed, Agile Gallery, Санкт-Петербург</p>
+<p>7-е октября, <a href="/ru/texts/information/">Информационное,</a>   Failed, Agile Gallery, Санкт-Петербург</p>
 
-<p>октябрь - ноябрь, <a href="/ru/artistic-objects/figuresmillion/">Миллион</a>, Вербатим, выставка Тихие голоса, Красноярский центр искусств, Красноярск</p>
+<p>октябрь - ноябрь, <a href="/ru/projects/figuresmillion/">Миллион</a>, Вербатим, выставка Тихие голоса, Красноярский центр искусств, Красноярск</p>
 
-<p>22 сентябрь, <a href="/ru/artistic-objects/babushka-s/">Бабушкас</a>, фестиваль уличного искусства "Арт Проспект", Санкт-Петербург</p>
+<p>22 сентябрь, <a href="/ru/projects/babushka-s/">Бабушкас</a>, фестиваль уличного искусства "Арт Проспект", Санкт-Петербург</p>
 
-<p>6-10 сентябрь, презентация <a href="/ru/curatorial/communication-management-unit/">CMU</a>, Lofoten Sound Art Symposium, Норвегия</p>
+<p>6-10 сентябрь, презентация <a href="/ru/projects/communication-management-unit/">CMU</a>, Lofoten Sound Art Symposium, Норвегия</p>
 
-<p>июнь, <a href="/ru/artistic-objects/rooms-1/">Комнаты</a>, Пространствование, Quartariata Residency, Санкт-Петербург</p>
+<p>июнь, <a href="/ru/projects/rooms-1/">Комнаты</a>, Пространствование, Quartariata Residency, Санкт-Петербург</p>
 
-<p>31 май - 3 июня, <a href="/ru/artistic-objects/rooms/">Технологии присутствия,</a> фестиваль Убежище, Хельсинки, Финляндия</p>
+<p>31 май - 3 июня, <a href="/ru/projects/rooms/">Технологии присутствия,</a> фестиваль Убежище, Хельсинки, Финляндия</p>
 
-<p>май - июнь, <a href="/ru/artistic-objects/you-can-touch-it/">Вы можете это потрогать</a>, Слепки, Музей Академии Художеств им Репина, Санкт-Петербург</p>
+<p>май - июнь, <a href="/ru/projects/you-can-touch-it/">Вы можете это потрогать</a>, Слепки, Музей Академии Художеств им Репина, Санкт-Петербург</p>
 
-<p>май - июнь, <a href="/ru/artistic-objects/behing-the/">Над вечным покоем</a>,  Частная жизнь радиочастот, Музей радио, Санкт-Петербург</p>
+<p>май - июнь, <a href="/ru/projects/behing-the/">Над вечным покоем</a>,  Частная жизнь радиочастот, Музей радио, Санкт-Петербург</p>
 
-<p>апрель, <a href="/ru/artistic-objects/dialog/">Диалог</a>, Социальные медиа - привычка к совместности, Музей радио, Санкт-Петербург</p>
+<p>апрель, <a href="/ru/projects/dialog/">Диалог</a>, Социальные медиа - привычка к совместности, Музей радио, Санкт-Петербург</p>
 
-<p>январь - present, <a href="/ru/artistic-objects/the-google-it/">Thegoogleit</a>, web выставка<br></p>
+<p>январь - present, <a href="/ru/projects/the-google-it/">Thegoogleit</a>, web выставка<br></p>
 
 <p>2017</p>
 
-<p>декабрь,  <a href="/ru/artistic-objects/track-track/">The End,</a> "Track 2 Track",  Quartariata Residency,  финальная выставка лаборатории экспериментальной поэзии</p>
+<p>декабрь,  <a href="/ru/projects/track-track/">The End,</a> "Track 2 Track",  Quartariata Residency,  финальная выставка лаборатории экспериментальной поэзии</p>
 
-<p>сентябрь, <a href="/ru/artistic-objects/you-can-touch-it/">Вы можете это потрогать,</a> Письма в будущее, ДК Розы, Санкт-Петербург</p>
+<p>сентябрь, <a href="/ru/projects/you-can-touch-it/">Вы можете это потрогать,</a> Письма в будущее, ДК Розы, Санкт-Петербург</p>
 
-<p>сентябрь, <a href="/ru/artistic-objects/the-blue-serie/">Синяя серия</a>, выставка Настоящая небыль, 14-ый фестиваль “Современное искусство в традиционном музее”, Санкт-Петербург</p>
+<p>сентябрь, <a href="/ru/projects/the-blue-serie/">Синяя серия</a>, выставка Настоящая небыль, 14-ый фестиваль “Современное искусство в традиционном музее”, Санкт-Петербург</p>
 
-<p>cентябрь, <a href="/ru/artistic-objects/figuresmillion/">Миллион</a>, <a href="/ru/artistic-objects/verbatim-1/">Вербатим</a>, выставка Тихие голоса, Петропавловская крепость, Санкт-Петербург</p>
+<p>cентябрь, <a href="/ru/projects/figuresmillion/">Миллион</a>, <a href="/ru/projects/verbatim-1/">Вербатим</a>, выставка Тихие голоса, Петропавловская крепость, Санкт-Петербург</p>
 
-<p>февраль, <a href="/ru/artistic-objects/the-blue-serie/">Синяя серия</a>, 900 and another 25,000 days, Новый музей, Санкт-Петербург</p>
+<p>февраль, <a href="/ru/projects/the-blue-serie/">Синяя серия</a>, 900 and another 25,000 days, Новый музей, Санкт-Петербург</p>
 
 <p>2016</p>
 
-<p>июль, <a href="/ru/artistic-objects/no-words-no-war/">Нет слов/ нет войны</a>, Глубоко внутри, Московская молодежная биеннале, Москва</p>
+<p>июль, <a href="/ru/projects/no-words-no-war/">Нет слов/ нет войны</a>, Глубоко внутри, Московская молодежная биеннале, Москва</p>
 
-<p>апрель, <a href="/ru/artistic-objects/no-words-no-war/">Нет слов/ нет войны,</a> выставка What we left behind in Russia?, часть проекта “Beside war", Redipuglia Fogliano, Италия</p>
+<p>апрель, <a href="/ru/projects/no-words-no-war/">Нет слов/ нет войны,</a> выставка What we left behind in Russia?, часть проекта “Beside war", Redipuglia Fogliano, Италия</p>
 
 <p>2015</p>
 
-<p>ноябрь,<a href="/ru/artistic-objects/daily-news/">Новости Луганска,</a>Мультимедиа фестиваль,  Красноярск, Россия</p>
+<p>ноябрь,<a href="/ru/projects/daily-news/">Новости Луганска,</a>Мультимедиа фестиваль,  Красноярск, Россия</p>
 
-<p>октябрь, <a href="/ru/artistic-objects/daily-news/">Новости Луганска,</a> Leaving Tomorrow, финальная выставка проекта Старт, Винзавод, Москва, Russia</p>
+<p>октябрь, <a href="/ru/projects/daily-news/">Новости Луганска,</a> Leaving Tomorrow, финальная выставка проекта Старт, Винзавод, Москва, Russia</p>
 
-<p>октябрь, <a href="/ru/artistic-objects/figuresmillion/">Миллион</a>, 900 and another 25,000 days, Kunstverein, Hamburg, Germany</p>
+<p>октябрь, <a href="/ru/projects/figuresmillion/">Миллион</a>, 900 and another 25,000 days, Kunstverein, Hamburg, Germany</p>
 
-<p>октябрь,<a href="/ru/artistic-objects/daily-news/">Новости Луганска</a>,“Внимание!!” multimedia art festival, Lvov, Ukraine</p>
+<p>октябрь,<a href="/ru/projects/daily-news/">Новости Луганска</a>,“Внимание!!” multimedia art festival, Lvov, Ukraine</p>
 
-<p>май, <a href="/ru/artistic-objects/planets/">Open:spaces,</a> Звездный городок, выпускная выставка студентов Школы молодого художника фонда Про Арте, Новый музей, Санкт-Петербург, Россия</p>
+<p>май, <a href="/ru/projects/planets/">Open:spaces,</a> Звездный городок, выпускная выставка студентов Школы молодого художника фонда Про Арте, Новый музей, Санкт-Петербург, Россия</p>
 
-<p>май, <a href="/ru/artistic-objects/cover/">Ковер</a>,   "24h" Corner Space, Helsinki</p>
+<p>май, <a href="/ru/projects/cover/">Ковер</a>,   "24h" Corner Space, Helsinki</p>
 
-<p>апрель, <a href="/ru/artistic-objects/no-words-no-war/">Нет слов/ нет войны</a>, выставка Военный музей, ММСИ, Москва</p>
+<p>апрель, <a href="/ru/projects/no-words-no-war/">Нет слов/ нет войны</a>, выставка Военный музей, ММСИ, Москва</p>
 
 <p>2014</p>
 
-<p>сентябрь, интерактивная скульптура <a href="/ru/artistic-objects/cube-not-cube/">Куб не куб,</a>  фестиваль паблик-арт "Арт проспект", Санкт-Петербург, Россия</p>
+<p>сентябрь, интерактивная скульптура <a href="/ru/projects/cube-not-cube/">Куб не куб,</a>  фестиваль паблик-арт "Арт проспект", Санкт-Петербург, Россия</p>
 
 <p>июль, Последние открытия, Москва, ЦСИ Сокол, специальная программа Московской биеннале молодого искусства</p>
 
-<p>июнь,<a href="/ru/artistic-objects/daily-news/">НовостиЛуганска,</a>  видео-показ,  фонд Про Арте, Санкт-Петербург, Россия</p>
+<p>июнь,<a href="/ru/projects/daily-news/">НовостиЛуганска,</a>  видео-показ,  фонд Про Арте, Санкт-Петербург, Россия</p>
 
 <p>2013</p>
 
-<p>декабрь, <a href="/ru/artistic-objects/under-ground/">Подземка</a>,  "В чем суть?", фонд Про Арте, Санкт-Петербург, Россия</p>
+<p>декабрь, <a href="/ru/projects/under-ground/">Подземка</a>,  "В чем суть?", фонд Про Арте, Санкт-Петербург, Россия</p>
 
 <p>Коллекции</p>
 
-<p><a href="/ru/artistic-objects/no-words-no-war/">Проект "Ни слова о войне"</a>  передан в коллекцию <a href="https://www.iodeposito.org/en/">IoDeposito</a></p>
+<p><a href="/ru/projects/no-words-no-war/">Проект "Ни слова о войне"</a>  передан в коллекцию <a href="https://www.iodeposito.org/en/">IoDeposito</a></p>
 
 <p>Достижения</p>
 

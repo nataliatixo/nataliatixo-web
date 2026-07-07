@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="page page-list">
+  <h1>{{ .Title }}</h1>
+  <div class="content">{{ .Content }}</div>
+  {{ $groups := slice
+      (dict "key" "artistic" "label" (cond (eq .Language.Lang "ru") "Художественные объекты" "Artistic objects and non-objects"))
+      (dict "key" "curatorial" "label" (cond (eq .Language.Lang "ru") "Кураторские проекты" "Curatorial projects"))
+  }}
+  {{ range $groups }}
+    {{ $pages := where $.Pages "Params.group" .key }}
+    {{ if $pages }}
+    <h2 class="group-heading">{{ .label }}</h2>
+    <ul class="child-list">
+      {{ range $pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          {{ with .Resources.ByType "image" }}{{ with index . 0 }}<img src="{{ .RelPermalink }}" alt="" loading="lazy">{{ end }}{{ end }}
+          <span>{{ .Title }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  {{ end }}
+</article>
+{{ end }}

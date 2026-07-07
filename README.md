@@ -9,6 +9,7 @@ Wix has no export feature, so this is a two-step migration: mirror the live site
 - [x] Mirror the live Wix site (done 2026-07-07: 123 HTML pages + ~1.5GB media in `mirror/`)
 - [x] Review mirrored content, decide structure — Hugo, bilingual EN/RU, ~74 project/bio pages + 33 blog posts
 - [x] Rebuild pages here — Hugo site scaffolded, content extracted via `scripts/extract_content.py`
+- [x] Restructure into 4 sections — About · Projects · Texts · Archive (Wix's "blog" was mostly archival material, so its posts were split into Texts (writing by the author) and Archive (activity log); interviews/press live at /press/ and are listed on the About page)
 - [x] Style pass — minimalistic greyscale/light-grey theme (`static/css/style.css`)
 - [x] Full EN/RU blog parity — all 33 posts now exist in both languages (translated by Claude where no native version existed; see `CLAUDE.md` for which posts are original vs. translated)
 - [ ] Videos — 5 Wix videos have placeholder markers (`{{< video >}}` shortcode) on their posts; waiting on you to upload them (YouTube/Vimeo) and drop in the URLs

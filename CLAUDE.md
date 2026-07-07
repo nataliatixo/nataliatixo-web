@@ -24,13 +24,17 @@ Language switching is entirely client-side (`layouts/partials/lang-redirect.html
 
 ### Content structure
 
-- `content/_index.md` (+ `.ru.md`) — home/about (from the site's `nataliatixoeng.html` root page)
-- `content/artistic-objects/` — 25 project pages (paintings, installations, performances), all bilingual
-- `content/curatorial/` — 5 curatorial project pages, all bilingual (except one RU 404, see gaps below)
-- `content/poetical/` — "Texts": research + poetical-texts pages
-- `content/posts/` — 33 blog posts (page-bundle-per-post) + `random-pictures` (bilingual); categories/tags come from Wix's `blog-1/categories/*` and `blog-1/hashtags/*` index pages, not from each post individually
+Four sections (nav: About · Projects · Texts · Archive), organized by what content *is*, not by which Wix app it lived in. Wix's "blog" was really four kinds of content, so its posts were redistributed:
 
-Each leaf page is a **page bundle** (`index.md` + copied images alongside), not a flat `.md` file, so images stay colocated with their content.
+- `content/_index.md` (+ `.ru.md`) — **About**: home page, bio + CV (from the site's `nataliatixoeng.html` root page)
+- `content/projects/` — **Projects**: the 26 artistic-object pages + 5 curatorial pages merged flat into one section; each page carries `group: artistic|curatorial` front matter, and `layouts/projects/list.html` renders the two groups under separate headings
+- `content/texts/` — **Texts**: writing *by* the author, from the old blog: ~12 poetry/prose bundles (`group: poetry`) + 5 essays/published texts (`group: essays`); `layouts/texts/list.html` groups them
+- `content/archive/` — **Archive**: the dated activity log (talks, lectures, conferences, mediations, announcements) plus `random-pictures`; `layouts/archive/list.html` renders one chronological list
+- `content/press/` — **Press** (not in the nav): the 4 interviews *about* her; `layouts/index.html` surfaces them as a "Press" list at the bottom of the About page, since press belongs with the bio rather than the activity log
+
+Section membership lives in the extraction script's manifest lists (`ARTISTIC_OBJECTS`/`CURATORIAL`/`TEXTS_POETRY`/`TEXTS_ESSAYS`/`ARCHIVE_POSTS`/`PRESS` in `extract_content.py`) — to move a page between sections, move its slug between lists *and* `git mv` its content bundle. Categories/tags from Wix (`blog-1/categories/*`, `blog-1/hashtags/*`) are still extracted as taxonomy front matter but the `group` param is what drives the section listings.
+
+Each leaf page is a **page bundle** (`index.md` + copied images alongside), not a flat `.md` file, so images stay colocated with their content. Nav menus are defined per-language in `hugo.toml` (`[languages.en.menus]` / `[languages.ru.menus]`) so RU pages get Russian labels.
 
 ### Content extraction (`scripts/extract_content.py`)
 

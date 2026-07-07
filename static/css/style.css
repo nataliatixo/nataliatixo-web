@@ -113,6 +113,17 @@ a:hover { text-decoration-color: currentColor; }
   margin: 1.5rem 0 0.5rem;
 }
 
+.group-heading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 3rem 0 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .child-list, .post-list {
   list-style: none;
   padding: 0;

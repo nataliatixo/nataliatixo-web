@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="page page-list page-archive">
+  <h1>{{ .Title }}</h1>
+  <div class="content">{{ .Content }}</div>
+  <ul class="post-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <span class="post-title">{{ .Title }}</span>
+        {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

@@ -36,7 +36,7 @@ title: "About"
 
 <p>2003 – 2008    <a href="http://eng.unn.ru">Lobachevski State University of Nizhny Novogorod</a>, <a href="http://eng.unn.ru/about/academic-units/faculty-of-radiophysics">radiophisycal department</a></p>
 
-<p>Selected <a href="/curatorial/">curatorial projects</a></p>
+<p>Selected <a href="/projects/">curatorial projects</a></p>
 
 <p>Co-curated<a href="https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">"Radio hopes and dreams." The Moscow edition. Let's talk about climate, baby!</a></p>
 
@@ -53,24 +53,24 @@ April, 2018 – present</p>
 September - November, 2017 <br>
 <a href="http://fourth.uralbiennale.ru/en/places/parallel-program/communication-management-unit">Parallel program of Ural Industrial Biennale</a></p>
 
-<p>Personal <a href="/artistic-objects/">exhibitions</a></p>
+<p>Personal <a href="/projects/">exhibitions</a></p>
 
 <p>November, 2020       Technologies of presence, Kunsthalle Nummer Sieben, Saint Petersburg, Russia<br>
-November, 2019<a href="/artistic-objects/sometimes-behave-so-strangely/">Sometimes behave so strangely,</a><a href="https://www.facebook.com/FFTN-1614665878825861/">FFTN Gallery</a>, Saint Petersburg, Russia</p>
+November, 2019<a href="/projects/sometimes-behave-so-strangely/">Sometimes behave so strangely,</a><a href="https://www.facebook.com/FFTN-1614665878825861/">FFTN Gallery</a>, Saint Petersburg, Russia</p>
 
-<p>November, 2018<a href="/artistic-objects/babushka-s/">Babushkas</a>project,<a href="https://chtodelat.org/category/ar_8/?lang=ru/feed/">Rosa's House of Culture</a>, Saint Petersburg, Russia</p>
+<p>November, 2018<a href="/projects/babushka-s/">Babushkas</a>project,<a href="https://chtodelat.org/category/ar_8/?lang=ru/feed/">Rosa's House of Culture</a>, Saint Petersburg, Russia</p>
 
 <p>February, 2017<a href="http://www.worldwarone.it/2017/02/no-words-no-war-poli-focal-interactive.html">No words no war,</a>Carinarnica, Slovenia</p>
 
-<p>December, 2016<a href="/artistic-objects/somethingnew/">Something New</a>,<a href="https://www.facebook.com/FFTN-1614665878825861/">FFTN Gallery</a>, Saint Petersburg</p>
+<p>December, 2016<a href="/projects/somethingnew/">Something New</a>,<a href="https://www.facebook.com/FFTN-1614665878825861/">FFTN Gallery</a>, Saint Petersburg</p>
 
-<p>April, 2016<a href="/artistic-objects/the-decay-time-of-mettastable-state/">The decay time of metastable states,</a><a href="https://www.facebook.com/pg/intimnoemesto/about/">Intimate place</a>, Saint Petersburg, Russia</p>
+<p>April, 2016<a href="/projects/the-decay-time-of-mettastable-state/">The decay time of metastable states,</a><a href="https://www.facebook.com/pg/intimnoemesto/about/">Intimate place</a>, Saint Petersburg, Russia</p>
 
 <p>Group exhibitions</p>
 
 <p>2020</p>
 
-<p>December, <a href="/artistic-objects/sometimes-behave-so-strangely/">Sometimes behave so strangely,</a> Exhibition of nominees for the Kurekhin Prize, CSI Kurekhin</p>
+<p>December, <a href="/projects/sometimes-behave-so-strangely/">Sometimes behave so strangely,</a> Exhibition of nominees for the Kurekhin Prize, CSI Kurekhin</p>
 
 <p>9 - 13 September, <a href="https://pangardenia.art">Pangardenia</a>, Ars Electronica, Saint Petersburg</p>
 
@@ -84,13 +84,13 @@ November, 2019<a href="/artistic-objects/sometimes-behave-so-strangely/">Sometim
 
 <p>8-10 November, co-curated of<a href="https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">Radio "Hopes and Dreams", the Moscow Edition</a>, Garage museum, Moscow</p>
 
-<p>3,4,16,17 October, performance <a href="/artistic-objects/on-line/">"On line"</a> on <a href="http://kuryokhin.net/impulseexhibition">Impulse exhibition</a>, CCI Kurehina, Saint Petersburg</p>
+<p>3,4,16,17 October, performance <a href="/projects/on-line/">"On line"</a> on <a href="http://kuryokhin.net/impulseexhibition">Impulse exhibition</a>, CCI Kurehina, Saint Petersburg</p>
 
-<p>October, <a href="/artistic-objects/you-can-touch-it/">You can touch it</a> and <a href="/artistic-objects/babushka-s/">Babushkas</a> Zin, <a href="https://www.facebook.com/groups/800787473370867/">Rosa's House of cultur</a>e, <a href="http://curatorialforum.art/eng">Saint Petersburg Curatorial Forum</a></p>
+<p>October, <a href="/projects/you-can-touch-it/">You can touch it</a> and <a href="/projects/babushka-s/">Babushkas</a> Zin, <a href="https://www.facebook.com/groups/800787473370867/">Rosa's House of cultur</a>e, <a href="http://curatorialforum.art/eng">Saint Petersburg Curatorial Forum</a></p>
 
-<p>July, <a href="/artistic-objects/heaven/">Heaven</a>, <a href="https://gammafestival.ru">Gamma Festival</a>, Saint Petersburg</p>
+<p>July, <a href="/projects/heaven/">Heaven</a>, <a href="https://gammafestival.ru">Gamma Festival</a>, Saint Petersburg</p>
 
-<p>April, <a href="/artistic-objects/academy/">Academy</a>, <a href="https://www.inyourpocket.com/st-petersburg-en/levels_19828e">Levels</a>,  Stepan Razin Factory, Saint Petersburg</p>
+<p>April, <a href="/projects/academy/">Academy</a>, <a href="https://www.inyourpocket.com/st-petersburg-en/levels_19828e">Levels</a>,  Stepan Razin Factory, Saint Petersburg</p>
 
 <p>February - March,<a href="https://www.bsidewar.org/en/past/pheripheral-visions-exhibition/">Peripheralvisions, Trieste, Italy</a></p>
 
@@ -98,67 +98,67 @@ November, 2019<a href="/artistic-objects/sometimes-behave-so-strangely/">Sometim
 
 <p>7th of October, Informing,   Failed, <a href="https://www.instagram.com/agile_gallery/">Agile Gallery</a>, Saint Petersburg</p>
 
-<p>October - November, <a href="/artistic-objects/figuresmillion/">Million</a>, <a href="/artistic-objects/verbatim-1/">Verbatim</a>, <a href="http://www.ncca.ru/en/events.text?filial=6&amp;id=1783">Silent voices</a>, <a href="http://cyland.org/lab/the-exhibition-project-silent-voices-continues-in-krasnoyarsk/">...</a> ,  <a href="http://mira1.ru/en/place/">The Krasnoyarsk Museum Center</a>,  Krasnoyarsk</p>
+<p>October - November, <a href="/projects/figuresmillion/">Million</a>, <a href="/projects/verbatim-1/">Verbatim</a>, <a href="http://www.ncca.ru/en/events.text?filial=6&amp;id=1783">Silent voices</a>, <a href="http://cyland.org/lab/the-exhibition-project-silent-voices-continues-in-krasnoyarsk/">...</a> ,  <a href="http://mira1.ru/en/place/">The Krasnoyarsk Museum Center</a>,  Krasnoyarsk</p>
 
-<p>22 September,  <a href="/artistic-objects/babushka-s/">Babushkas</a>, public art festival <a href="https://www.artprospect.org">"Art Prospect",</a>  Saint Petersburg</p>
+<p>22 September,  <a href="/projects/babushka-s/">Babushkas</a>, public art festival <a href="https://www.artprospect.org">"Art Prospect",</a>  Saint Petersburg</p>
 
-<p>6-10 September, <a href="/curatorial/communication-management-unit/">CMU</a>.presentation, <a href="https://lofotensoundart.no">Lofoten Sound Art Symposium</a>, Norway</p>
+<p>6-10 September, <a href="/projects/communication-management-unit/">CMU</a>.presentation, <a href="https://lofotensoundart.no">Lofoten Sound Art Symposium</a>, Norway</p>
 
-<p>June, <a href="/artistic-objects/rooms-1/">Rooms</a>, <a href="https://spacing2018.wixsite.com/spacing">Spacing</a>, Quartariata Residency, Saint Petersburg</p>
+<p>June, <a href="/projects/rooms-1/">Rooms</a>, <a href="https://spacing2018.wixsite.com/spacing">Spacing</a>, Quartariata Residency, Saint Petersburg</p>
 
-<p>31st of May - 3th of June, <a href="/artistic-objects/rooms/">Technologies of presence</a>, <a href="http://suojashelter.tilda.ws">Shelter</a>, participation in Shelter Festival, Helsinki, Finland</p>
+<p>31st of May - 3th of June, <a href="/projects/rooms/">Technologies of presence</a>, <a href="http://suojashelter.tilda.ws">Shelter</a>, participation in Shelter Festival, Helsinki, Finland</p>
 
-<p>May - June, <a href="/artistic-objects/you-can-touch-it/">You can touch it</a>, <a href="http://www.ncca.ru/events.text?filial=6&amp;id=4553&amp;listid=2843">The cases</a>, Museum of Imperial Academy of Arts, Saint Petersburg</p>
+<p>May - June, <a href="/projects/you-can-touch-it/">You can touch it</a>, <a href="http://www.ncca.ru/events.text?filial=6&amp;id=4553&amp;listid=2843">The cases</a>, Museum of Imperial Academy of Arts, Saint Petersburg</p>
 
-<p>May - June, <a href="/artistic-objects/behing-the/">Above the eternal piece</a>, <a href="http://www.museum.ru/N69838">Private life of radio waves</a>, <a href="https://en.wikipedia.org/wiki/A.S._Popov_Central_Museum_of_Communications">Saint Petersburg Museum of Telecommunications</a></p>
+<p>May - June, <a href="/projects/behing-the/">Above the eternal piece</a>, <a href="http://www.museum.ru/N69838">Private life of radio waves</a>, <a href="https://en.wikipedia.org/wiki/A.S._Popov_Central_Museum_of_Communications">Saint Petersburg Museum of Telecommunications</a></p>
 
-<p>April, <a href="/artistic-objects/dialog/">Dialog</a>, <a href="https://www.rustelecom-museum.ru/news/363/">Social media - the habit of consistency</a>, <a href="https://en.wikipedia.org/wiki/A.S._Popov_Central_Museum_of_Communications">Saint Petersburg Museum of Telecommunications</a></p>
+<p>April, <a href="/projects/dialog/">Dialog</a>, <a href="https://www.rustelecom-museum.ru/news/363/">Social media - the habit of consistency</a>, <a href="https://en.wikipedia.org/wiki/A.S._Popov_Central_Museum_of_Communications">Saint Petersburg Museum of Telecommunications</a></p>
 
 <p>2017</p>
 
-<p>December,  <a href="/artistic-objects/track-track/">Text based poetry, "Track 2 Track",</a> Quartariata Residency, Peterhof, <a href="https://languageartist.me/2017/12/15/1143/">exhibition based on the Laboratory of Experimental Poetry</a></p>
+<p>December,  <a href="/projects/track-track/">Text based poetry, "Track 2 Track",</a> Quartariata Residency, Peterhof, <a href="https://languageartist.me/2017/12/15/1143/">exhibition based on the Laboratory of Experimental Poetry</a></p>
 
-<p>November,  <a href="/artistic-objects/track-track/">Text based poetry,  "Track Track"</a>, Smonly college, Saint Petersburg, <a href="https://languageartist.me/2017/11/07/track-track/">exhibition based on the Laboratory of Experimental Poetry</a></p>
+<p>November,  <a href="/projects/track-track/">Text based poetry,  "Track Track"</a>, Smonly college, Saint Petersburg, <a href="https://languageartist.me/2017/11/07/track-track/">exhibition based on the Laboratory of Experimental Poetry</a></p>
 
-<p>September, <a href="/artistic-objects/you-can-touch-it/">You can touch it</a>, <a href="https://www.facebook.com/events/965589796912417/">Letters to the future</a>, Rosa's House of Culture, Saint Petersburg</p>
+<p>September, <a href="/projects/you-can-touch-it/">You can touch it</a>, <a href="https://www.facebook.com/events/965589796912417/">Letters to the future</a>, Rosa's House of Culture, Saint Petersburg</p>
 
-<p>September, <a href="/artistic-objects/the-blue-serie/">The blue series</a>, <a href="http://proartefestival.ru/2017/en/truefiction/">True Fiction</a>, <a href="http://proartefestival.ru/2017/en/about/">The 14th Contemporary Art in the Traditional Museum Festival</a>, Saint Petersburg</p>
+<p>September, <a href="/projects/the-blue-serie/">The blue series</a>, <a href="http://proartefestival.ru/2017/en/truefiction/">True Fiction</a>, <a href="http://proartefestival.ru/2017/en/about/">The 14th Contemporary Art in the Traditional Museum Festival</a>, Saint Petersburg</p>
 
-<p>September, <a href="/artistic-objects/figuresmillion/">Million</a>, <a href="/artistic-objects/verbatim-1/">Verbatim</a>, <a href="http://www.ncca.ru/en/events.text?filial=6&amp;id=1783">Silent voices</a>, Peter and Paul Fortress, Saint Petersburg</p>
+<p>September, <a href="/projects/figuresmillion/">Million</a>, <a href="/projects/verbatim-1/">Verbatim</a>, <a href="http://www.ncca.ru/en/events.text?filial=6&amp;id=1783">Silent voices</a>, Peter and Paul Fortress, Saint Petersburg</p>
 
-<p>February, <a href="/artistic-objects/the-blue-serie/">The blue series</a>, <a href="http://www.proarte.ru/events/vystavka-900-i-eshche-26-000-dney-nemetsko-russkiy-proekt-posvyashchennyy-pamyati-o-blokade-leningra/">900 and another 25,000 days</a>,<a href="https://de.rbth.com/deutschland_und_russland/geschichte_und_kultur/2017/02/17/sankt-petersburg-neue-ausstellung-uber-die-blockade-von-leningrad-eroffnet_704381">...</a>, New museum, Saint Petersburg</p>
+<p>February, <a href="/projects/the-blue-serie/">The blue series</a>, <a href="http://www.proarte.ru/events/vystavka-900-i-eshche-26-000-dney-nemetsko-russkiy-proekt-posvyashchennyy-pamyati-o-blokade-leningra/">900 and another 25,000 days</a>,<a href="https://de.rbth.com/deutschland_und_russland/geschichte_und_kultur/2017/02/17/sankt-petersburg-neue-ausstellung-uber-die-blockade-von-leningrad-eroffnet_704381">...</a>, New museum, Saint Petersburg</p>
 
 <p>2016</p>
 
-<p>July, <a href="/artistic-objects/no-words-no-war/">No words no war,</a> <a href="https://viennacontemporarymag.com/2016/07/11/moscow-international-biennale-for-young-art-highlights/">5th Moscow International Biennale for Young Art: «Deep Inside». Main Project</a>, Moscow, Russia</p>
+<p>July, <a href="/projects/no-words-no-war/">No words no war,</a> <a href="https://viennacontemporarymag.com/2016/07/11/moscow-international-biennale-for-young-art-highlights/">5th Moscow International Biennale for Young Art: «Deep Inside». Main Project</a>, Moscow, Russia</p>
 
-<p>April, <a href="/artistic-objects/no-words-no-war/">No words no war</a>, <a href="http://www.iodeposito.org/wp-content/uploads/2016/04/2016bside_WhatweleftbehindinRussia.pdf">What we left behind in Russia?</a>, the part of <a href="https://www.iodeposito.org/en/">“Beside war" project,</a> Redipuglia Fogliano, Italy</p>
+<p>April, <a href="/projects/no-words-no-war/">No words no war</a>, <a href="http://www.iodeposito.org/wp-content/uploads/2016/04/2016bside_WhatweleftbehindinRussia.pdf">What we left behind in Russia?</a>, the part of <a href="https://www.iodeposito.org/en/">“Beside war" project,</a> Redipuglia Fogliano, Italy</p>
 
 <p>2015</p>
 
-<p>November, <a href="/artistic-objects/daily-news/">Lugansk Diary,</a><a href="http://www.filmshouse.ru/media-festival">Multimedia Art Festival,</a>  Krasnoyark, Russia</p>
+<p>November, <a href="/projects/daily-news/">Lugansk Diary,</a><a href="http://www.filmshouse.ru/media-festival">Multimedia Art Festival,</a>  Krasnoyark, Russia</p>
 
-<p>October, <a href="/artistic-objects/daily-news/">Daily News</a>, <a href="http://aroundart.org/2015/10/30/leaving-tomorrow/">Leaving Tomorrow,</a> the final exhibition of the project Start, <a href="http://www.winzavod.ru">Winzavod</a>, Moscow, Russia</p>
+<p>October, <a href="/projects/daily-news/">Daily News</a>, <a href="http://aroundart.org/2015/10/30/leaving-tomorrow/">Leaving Tomorrow,</a> the final exhibition of the project Start, <a href="http://www.winzavod.ru">Winzavod</a>, Moscow, Russia</p>
 
-<p>October, <a href="/artistic-objects/figuresmillion/">Million</a>, <a href="http://www.proarte.ru/events/900-i-eshche-primerno-26-000-dney-nemetsko-russkiy-khudozhestvennyy-proekt-posvyashchennyy-blokade-l/?sphrase_id=505431">900 and another 25,000 days</a>, <a href="https://www.kunstverein.de/ausstellungen/rueckblick/900-und-etwa-26000-tage">...</a> , Kunstverein, Hamburg, Germany</p>
+<p>October, <a href="/projects/figuresmillion/">Million</a>, <a href="http://www.proarte.ru/events/900-i-eshche-primerno-26-000-dney-nemetsko-russkiy-khudozhestvennyy-proekt-posvyashchennyy-blokade-l/?sphrase_id=505431">900 and another 25,000 days</a>, <a href="https://www.kunstverein.de/ausstellungen/rueckblick/900-und-etwa-26000-tage">...</a> , Kunstverein, Hamburg, Germany</p>
 
-<p>October, <a href="/artistic-objects/daily-news/">Daily News</a>,  <a href="https://www.facebook.com/tetramatyka/">“Warning!” multimedia art festival, Lvov</a>, Ukraine</p>
+<p>October, <a href="/projects/daily-news/">Daily News</a>,  <a href="https://www.facebook.com/tetramatyka/">“Warning!” multimedia art festival, Lvov</a>, Ukraine</p>
 
-<p>May, <a href="/artistic-objects/planets/">Planets</a>, <a href="http://www.proarte.ru/events/zvezdnyy-gorodok-vypusknaya-vystavka-shkoly-molodogo-khudozhnika-/?sphrase_id=505430">The star city,</a> New Museum, Saint Petersburg, Russia</p>
+<p>May, <a href="/projects/planets/">Planets</a>, <a href="http://www.proarte.ru/events/zvezdnyy-gorodok-vypusknaya-vystavka-shkoly-molodogo-khudozhnika-/?sphrase_id=505430">The star city,</a> New Museum, Saint Petersburg, Russia</p>
 
-<p>May, <a href="/artistic-objects/cover/">Cover</a>,   <a href="http://www.proarte.ru/events/vystavka-curiosities-khelsinki/?sphrase_id=505426">"24h",</a> Corner Space, Helsinki</p>
+<p>May, <a href="/projects/cover/">Cover</a>,   <a href="http://www.proarte.ru/events/vystavka-curiosities-khelsinki/?sphrase_id=505426">"24h",</a> Corner Space, Helsinki</p>
 
-<p>April, <a href="/artistic-objects/no-words-no-war/">No words no war</a>,  "<a href="http://www.mmoma.ru/exhibitions/tverskoy9/voennyj_muzej/">War Museum</a>", <a href="http://www.mmoma.ru/exhibitions/tverskoy9/">MMSI</a>, Moscow, Russia</p>
+<p>April, <a href="/projects/no-words-no-war/">No words no war</a>,  "<a href="http://www.mmoma.ru/exhibitions/tverskoy9/voennyj_muzej/">War Museum</a>", <a href="http://www.mmoma.ru/exhibitions/tverskoy9/">MMSI</a>, Moscow, Russia</p>
 
 <p>2014</p>
 
-<p>September, interactive sculpture <a href="/artistic-objects/cube-not-cube/">Cube not cube</a>, <a href="https://www.artprospect.org/2014">public art festival "Art Prospect",</a> Saint Petersburg, Russia</p>
+<p>September, interactive sculpture <a href="/projects/cube-not-cube/">Cube not cube</a>, <a href="https://www.artprospect.org/2014">public art festival "Art Prospect",</a> Saint Petersburg, Russia</p>
 
-<p>August, <a href="/artistic-objects/under-ground/">Underground</a>,  "Summer Fling: A Festival of 1-minute Films", Gallery 263, Cambridge, MA</p>
+<p>August, <a href="/projects/under-ground/">Underground</a>,  "Summer Fling: A Festival of 1-minute Films", Gallery 263, Cambridge, MA</p>
 
-<p>July,   <a href="/artistic-objects/track-track/">Track track</a>, “<a href="http://www.ncca.ru/en/events.text?filial=6&amp;id=1268">Last discoveries”, Moscow, CSCI Sokol</a>, special program of Moscow Biennale of Young Art</p>
+<p>July,   <a href="/projects/track-track/">Track track</a>, “<a href="http://www.ncca.ru/en/events.text?filial=6&amp;id=1268">Last discoveries”, Moscow, CSCI Sokol</a>, special program of Moscow Biennale of Young Art</p>
 
-<p>June,<a href="/artistic-objects/daily-news/">Lugansk Diary</a>,  Video show of works by participants of the "School of the young artist", <a href="http://www.proarte.ru/en/">ProArte</a>, Saint Petersburg</p>
+<p>June,<a href="/projects/daily-news/">Lugansk Diary</a>,  Video show of works by participants of the "School of the young artist", <a href="http://www.proarte.ru/en/">ProArte</a>, Saint Petersburg</p>
 
 <p><br>
 2013</p>
@@ -167,7 +167,7 @@ November, 2019<a href="/artistic-objects/sometimes-behave-so-strangely/">Sometim
 
 <p>Collections</p>
 
-<p><a href="/artistic-objects/no-words-no-war/">No words no war</a> project is in the official collection of <a href="https://www.iodeposito.org/en/">IoDeposito</a></p>
+<p><a href="/projects/no-words-no-war/">No words no war</a> project is in the official collection of <a href="https://www.iodeposito.org/en/">IoDeposito</a></p>
 
 <p>Awards</p>
 
