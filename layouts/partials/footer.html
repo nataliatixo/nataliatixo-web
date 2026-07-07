@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+</footer>
+<script>
+(function () {
+  var toggle = document.getElementById('lang-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      localStorage.setItem('lang-pref', toggle.dataset.lang);
+    });
+  }
+})();
+</script>

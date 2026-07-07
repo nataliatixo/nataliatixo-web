@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Mirrors the live Wix site into ../mirror as a content archive.
-# Re-run this once https://nataliatixo.wixsite.com/nataliatixoeng is back up (was HTTP 500 as of 2026-07-07).
+# Wix serves media from separate CDN hosts (static.wixstatic.com etc.), so
+# --span-hosts + --domains is needed to pull those alongside the HTML pages.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -10,5 +11,7 @@ wget --mirror \
   --adjust-extension \
   --page-requisites \
   --no-parent \
+  --span-hosts \
+  --domains=nataliatixo.wixsite.com,static.wixstatic.com,video.wixstatic.com,music.wixstatic.com,staticorigin.wixstatic.com \
   --directory-prefix=mirror \
   https://nataliatixo.wixsite.com/nataliatixoeng

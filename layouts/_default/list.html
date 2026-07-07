@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="page page-list">
+  <h1>{{ .Title }}</h1>
+  <div class="content">{{ .Content }}</div>
+  <ul class="child-list">
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        {{ with .Resources.ByType "image" }}{{ with index . 0 }}<img src="{{ .RelPermalink }}" alt="" loading="lazy">{{ end }}{{ end }}
+        <span>{{ .Title }}</span>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

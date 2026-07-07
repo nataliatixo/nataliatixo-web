@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="page page-list page-posts">
+  <h1>{{ .Title }}</h1>
+  <div class="content">{{ .Content }}</div>
+  {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+  <ul class="post-list">
+    {{ range $paginator.Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <span class="post-title">{{ .Title }}</span>
+        {{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+</article>
+{{ end }}

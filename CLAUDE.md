@@ -1,17 +1,67 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What this is
 
-A Wix-to-GitHub-Pages migration for https://nataliatixo.wixsite.com/nataliatixoeng. Wix has no export function, so the plan (see README.md) is: mirror the live site with `wget` for content/assets, then hand-rebuild it as a static site here, then deploy via GitHub Pages.
+A Wix-to-GitHub-Pages migration for https://nataliatixo.wixsite.com/nataliatixoeng, rebuilt as a Hugo static site. Wix has no export function, so the migration was: mirror the live site with `wget` for content/assets, extract that into Hugo content bundles with a Python script, then deploy via GitHub Pages.
 
 ## Current state
 
-Nothing has been rebuilt yet — this repo is a scaffold. The live site was returning HTTP 500 as of 2026-07-07; `scripts/mirror.sh` has not successfully run yet.
+Content has been mirrored (`mirror/`, gitignored) and extracted into a working Hugo site (`content/`, `layouts/`, `hugo.toml`). `hugo server -D` builds cleanly. Not yet done: switching the repo's GitHub Pages source to "GitHub Actions" and pointing DNS at `nataliatixo.com` — both require your explicit go-ahead since they touch shared/external systems, so ask before doing them. See README.md's status checklist for the up-to-date picture.
+
+## Stack
+
+Hugo (no npm, no third-party theme — hand-written minimal layouts). Local Hugo binary lives at `~/.local/bin/hugo` (installed by downloading the extended release directly, not via apt, since apt required sudo). `hugo.toml` needs `[markup.goldmark.renderer] unsafe = true` because content bodies are raw HTML (see below), not Markdown syntax.
+
+### Bilingual (EN default / RU)
+
+Single `content/` dir shared by both languages (`contentDir` the same for both in `hugo.toml`); English is the unsuffixed file (`index.md`), Russian is `.ru.md`. Not every page has both — the ~74 project/bio pages are full EN↔RU pairs, but blog posts are single-language (29 Russian-only, 7 English-only in the original) and simply have no counterpart file.
+
+Language switching is entirely client-side (`layouts/partials/lang-redirect.html` + the toggle script at the bottom of `layouts/partials/footer.html`): first visit checks `navigator.language`, redirects to the Russian translation only if one exists for that exact page (via Hugo's `.Translations`), and remembers the choice in `localStorage['lang-pref']` so it never fights a manual toggle. The toggle itself (in `layouts/partials/header.html`) falls back to the other language's homepage when the current page has no translation.
+
+### Content structure
+
+- `content/_index.md` (+ `.ru.md`) — home/about (from the site's `nataliatixoeng.html` root page)
+- `content/artistic-objects/` — 25 project pages (paintings, installations, performances), all bilingual
+- `content/curatorial/` — 5 curatorial project pages, all bilingual (except one RU 404, see gaps below)
+- `content/poetical/` — "Texts": research + poetical-texts pages
+- `content/posts/` — 33 blog posts (page-bundle-per-post) + `random-pictures` (bilingual); categories/tags come from Wix's `blog-1/categories/*` and `blog-1/hashtags/*` index pages, not from each post individually
+
+Each leaf page is a **page bundle** (`index.md` + copied images alongside), not a flat `.md` file, so images stay colocated with their content.
+
+### Content extraction (`scripts/extract_content.py`)
+
+Run with a venv that has `beautifulsoup4` + `lxml` (not system Python — Debian blocks plain `pip install`). Re-run after re-mirroring; it overwrites `content/`.
+
+What it does, per mirrored HTML page:
+- Title from the `<title>` tag (strips the ` | nataliatixo` suffix, capitalizes if all-lowercase).
+- Body: for portfolio-style pages, walks `#SITE_PAGES` collecting `data-testid="richTextElement"` (text) and `<img>` (images) in document order. For blog posts (Wix Blog app), walks `data-hook="post-description"` collecting `<p>`/`<img>`.
+- Text is cleaned into plain semantic HTML (`p`/`h1-h6`/`a`/`strong`/`em`/`br` only, everything else unwrapped) — Wix's inline styles and wrapper divs are stripped, not preserved.
+- Internal links get rewritten from old Wix URLs to new Hugo paths via a slug map built from the manifest (`SLUG_TO_URL` in the script); external links pass through unchanged.
+- Images: Wix stores originals as resized variants only (`static.wixstatic.com/media/<id>/v1/fill|fit/w_NNN,.../<id>`, no true full-res original in the static mirror) — the script picks the largest available width per unique media ID and copies it into the page bundle, deduping so the same image isn't copied/emitted twice even if it appears as both a body image and a gallery thumbnail.
+- Blog post dates come from the first `data-hook="time-ago"` element on the page; categories/tags are cross-referenced from the `blog-1/categories/*` and `blog-1/hashtags/*` listing pages (built once into a slug → categories/tags map).
+
+`--only slug1,slug2,...` limits a run to specific slugs (matches section slugs, child slugs, or post slugs) — useful for testing template/extraction changes without re-running everything.
+
+### Known content gaps (not extraction bugs — 404 on the live Wix site itself)
+
+Confirmed via literal "404" markers in the ~300KB mirrored HTML shells for these URLs:
+- 3 old blog posts at date-prefixed URLs (`post/2018/12/06/...`, `post/2018/12/27/...`) — dropped from the `POSTS` list in the extraction script with a comment explaining why.
+- The Russian translations of `kopiya-curatorial-projects`, `kopiya-procartistination-branches`, and `poeticaltexts` — the extraction script detects these automatically (no `<title>`, no body) and skips writing a blank placeholder.
+
+If these need to be recovered, it has to be from the Wix dashboard directly (drafts/originals), not from the mirror.
+
+## Commands
+
+- `hugo server -D` — local dev server.
+- `hugo --minify` — production build (what CI runs).
+- `./scripts/mirror.sh` — re-mirror the live site into `mirror/` via `wget --mirror --span-hosts --domains=...`. The domain list includes Wix's CDN hosts (`static.wixstatic.com`, `video.wixstatic.com`, etc.) so media is captured alongside HTML, not just page markup. Safe to re-run anytime; it just overwrites the archive.
+- `python3 scripts/extract_content.py [--only slug1,slug2]` — (re-)generate `content/` from the mirror. Needs a venv with `beautifulsoup4` + `lxml`.
 
 ## Working here
 
-- `mirror/` (once populated by `scripts/mirror.sh`) is a **content archive only** — raw Wix output full of framework JS and tracking scripts. Never deploy it directly; only pull text/images/structure out of it into the real site files at the repo root.
-- Once content is extracted, decide plain HTML/CSS vs. a static site generator (Hugo/Astro) based on how much content there actually is (a handful of pages vs. a blog with many posts). Follow the pattern of sibling repos `../bugueno.co` and `../centricity-808-landing` (plain HTML/CSS, no build step, GitHub Pages from repo root) if the site stays small.
-- Anything dynamic on the original (contact forms, bookings) has no static equivalent — plan to replace with Formspree/mailto or drop it.
+- `mirror/` is a **content archive only** — raw Wix output full of framework JS and tracking scripts. Never reference it from the live site; it only feeds `extract_content.py`.
+- `public/`, `resources/`, `.hugo_build.lock` are gitignored build artifacts — don't hand-edit anything there, it's regenerated by `hugo`.
+- Deploy is `.github/workflows/deploy.yml` (push to `main` → Hugo build → GitHub Pages). Enabling it live (Pages source setting, DNS) is an explicit follow-up, not done automatically.
+- Anything dynamic on the original Wix site (contact forms, bookings) has no static equivalent and was dropped during extraction — replace with Formspree/mailto if needed.

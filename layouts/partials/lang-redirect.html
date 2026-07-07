@@ -1,0 +1,18 @@
+{{ if eq .Site.Language.Lang "en" }}
+{{ $ruURL := "" }}
+{{ range .Translations }}{{ if eq .Language.Lang "ru" }}{{ $ruURL = .RelPermalink }}{{ end }}{{ end }}
+<script>
+(function () {
+  var pref = localStorage.getItem('lang-pref');
+  if (pref) { return; }
+  var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+  var ruURL = {{ $ruURL }};
+  if (browserLang.indexOf('ru') === 0 && ruURL) {
+    localStorage.setItem('lang-pref', 'ru');
+    location.replace(ruURL);
+    return;
+  }
+  localStorage.setItem('lang-pref', 'en');
+})();
+</script>
+{{ end }}
