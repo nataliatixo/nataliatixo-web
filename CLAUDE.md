@@ -70,6 +70,7 @@ If these need to be recovered, it has to be from the Wix dashboard directly (dra
 - `./scripts/mirror.sh` — re-mirror the live site into `mirror/` via `wget --mirror --span-hosts --domains=...`. The domain list includes Wix's CDN hosts (`static.wixstatic.com`, `video.wixstatic.com`, etc.) so media is captured alongside HTML, not just page markup. Safe to re-run anytime; it just overwrites the archive.
 - `python3 scripts/extract_content.py [--only slug1,slug2]` — (re-)generate `content/` from the mirror. Needs a venv with `beautifulsoup4` + `lxml`.
 - `python3 scripts/refetch_originals.py [--min-width 800]` — upgrade content images that are smaller than the Wix CDN's original upload (needs `mirror/` for the filename → media-id mapping, ImageMagick `identify`, and the Wix CDN still being up). Idempotent; run once more right before the Wix subscription is cancelled.
+- `./scripts/backup_mirror.sh [output-dir]` — tar `mirror/` into a checksummed archive (~1.5 GB). Run before cancelling Wix and move the archive somewhere durable; `mirror/` exists only on this machine and is the sole offline copy of the originals, including the two big lecture videos.
 
 ## Working here
 
