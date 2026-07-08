@@ -17,6 +17,8 @@
        then restore. The [^/] guard skips protocol-relative //host URLs. */ -}}
   {{- $c = replace $c (printf `="%s` $prefix) `="__PREFIXED__/` -}}
   {{- $c = replaceRE `(href|src)="/([^/])` (printf `${1}="%s${2}` $prefix) $c -}}
+  {{- /* Bare href="/" (home link) — the [^/] guard above skips it. */ -}}
+  {{- $c = replaceRE `(href|src)="/"` (printf `${1}="%s"` $prefix) $c -}}
   {{- $c = replace $c `="__PREFIXED__/` (printf `="%s` $prefix) -}}
 {{- end -}}
 {{- $c | safeHTML -}}

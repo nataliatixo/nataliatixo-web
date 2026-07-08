@@ -42,4 +42,4 @@ The action starts with the phrase “Sometimes behave so strangely” that mus
 
 <p class="caption">STRANGELY</p>
 
-<p class="lede">(C) <a href="http://www.nataliatixo.com">www.nataliatixo.com</a></p>
+<p class="lede">(C) <a href="/">www.nataliatixo.com</a></p>

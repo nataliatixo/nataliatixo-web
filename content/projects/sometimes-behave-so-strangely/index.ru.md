@@ -43,4 +43,4 @@ title: "Иногда ведет себя так странно"
 
 <p class="caption">СТРАННО</p>
 
-<p class="lede">(C) <a href="http://www.nataliatixo.com">www.nataliatixo.com</a></p>
+<p class="lede">(C) <a href="/ru/">www.nataliatixo.com</a></p>
