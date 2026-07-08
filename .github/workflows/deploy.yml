@@ -32,6 +32,17 @@ jobs:
           restore-keys: hugo-resources-
       - name: Build
         run: hugo --minify
+      # Internal-link check (.htmltest.yml). public/ is hardlinked under
+      # linkcheck/<baseURL subpath>/ so root-relative hrefs resolve exactly as
+      # they will on Pages — links missing the subpath prefix fail the build.
+      # The subpath is derived from baseURL, so the custom-domain switch
+      # (no subpath) needs no edit here.
+      - name: Check internal links
+        run: |
+          subpath=$(hugo config --format json | jq -r '.baseurl' | sed -E 's|^https?://[^/]+||; s|/+$||')
+          mkdir -p "$(dirname "linkcheck$subpath")" && cp -al public "linkcheck$subpath"
+          curl -sSL https://github.com/wjdp/htmltest/releases/download/v0.17.0/htmltest_0.17.0_linux_amd64.tar.gz | tar xz htmltest
+          ./htmltest
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public

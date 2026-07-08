@@ -1,0 +1,10 @@
+# Internal-link check, run by CI after the Hugo build (see deploy.yml).
+# The site is built into linkcheck/nataliatixo-web/ and scanned from
+# linkcheck/ so root-relative hrefs resolve exactly as they will on Pages —
+# a link missing the /nataliatixo-web/ subpath prefix fails here.
+DirectoryPath: linkcheck
+CheckExternal: false
+# alt="" is valid for decorative images; most migrated Wix images have no alt.
+IgnoreAltMissing: true
+IgnoreAltEmpty: true
+OutputDir: .htmltest
