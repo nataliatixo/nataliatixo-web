@@ -18,14 +18,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.164.0"
           extended: true
       # Processed-image cache (resources/_gen is gitignored); without it every
       # deploy re-encodes all WebP/thumbnail derivatives from scratch.
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: resources
           key: hugo-resources-${{ hashFiles('content/**') }}
@@ -43,7 +43,9 @@ jobs:
           mkdir -p "$(dirname "linkcheck$subpath")" && cp -al public "linkcheck$subpath"
           curl -sSL https://github.com/wjdp/htmltest/releases/download/v0.17.0/htmltest_0.17.0_linux_amd64.tar.gz | tar xz htmltest
           ./htmltest
-      - uses: actions/upload-pages-artifact@v3
+      # v4+ excludes dotfiles from the artifact — fine here, the built site
+      # has none (verified); revisit if a dotfile ever needs publishing.
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
@@ -55,4 +57,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
