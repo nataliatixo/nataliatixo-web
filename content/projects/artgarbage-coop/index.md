@@ -3,11 +3,11 @@ group: curatorial
 title: "ArtGarbage Coop"
 ---
 
-<img src="6253e7_7b840af61e0d44e9804ea8100e2d3379.png" alt="ArtGarbage.png">
+{{< img src="6253e7_7b840af61e0d44e9804ea8100e2d3379.png" alt="ArtGarbage.png" >}}
 
-<img src="34e3765f4f7e4544835057fcf9b8b8ea.png" alt="Vkontakte Social Иконка">
+{{< img src="34e3765f4f7e4544835057fcf9b8b8ea.png" alt="Vkontakte Social Иконка" >}}
 
-<img src="e316f544f9094143b9eac01f1f19e697.png" alt="Facebook">
+{{< img src="e316f544f9094143b9eac01f1f19e697.png" alt="Facebook" >}}
 
 <p>Art Gar(b)age Community is the platform that collect and store garbage left after the exhibitions. Anyone can ask Art Garbage Coop. to provide any things for the exhibitions or personal needs.</p>
 

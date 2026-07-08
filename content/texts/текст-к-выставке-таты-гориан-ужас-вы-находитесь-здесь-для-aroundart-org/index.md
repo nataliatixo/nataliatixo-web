@@ -7,7 +7,7 @@ categories: ["research"]
 
 <p><a href="http://aroundart.org/2020/04/13/otkrytia_okyabr-fevral/?fbclid=IwAR3GQvSkijnYA__IAimlSw50eiYWvn-SNxs12V2K1-U0aP311B9wU855iaY"><strong>Read the article on aroundart.org</strong></a></p>
 
-<img src="6253e7_61d8447c74e54a70a927fb7fac739098.jpg" alt="http://www.zgallery.ru">
+{{< img src="6253e7_61d8447c74e54a70a927fb7fac739098.jpg" alt="http://www.zgallery.ru" >}}
 
 <p>In November, a new point appeared on Petersburg's sparse but dense cultural map — ZGA gallery, founded on the basis of the "Dokdokdok School of Contemporary Photography." The exhibition space is oriented toward presenting conceptual photography and the school's graduates, which gives hope for expanding the boundaries of the contested definition of "Petersburg art." The gallery's first exhibition was the project "Horror. You Are Here" by artist Tata Gorian — a member of the group iBiom Box, a graduate of the "Dokdokdok" school, ISSP, and the Alexandrinsky Theatre's "New Media Lab."</p>
 

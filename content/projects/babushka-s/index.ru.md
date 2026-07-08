@@ -17,27 +17,27 @@ title: "Babushkas"
 21.11.2018   встреча с участниками,  лекция на тему "Преподавание как художественная практика", обсуждение художественных проектов в ДК Розы<br>
 25.11.2018   финисаж выставки в ДК Розы</p>
 
-<h6>Встречи в социальной центре на Чкаловской проспекте</h6>
+<p class="caption">Встречи в социальной центре на Чкаловской проспекте</p>
 
-<h6>09.06.2018 - 25.07.2018</h6>
+<p class="caption">09.06.2018 - 25.07.2018</p>
 
-<h6><a href="https://www.artprospect.org/fullscreen-page/comp-jlkxdcvj/e328093e-9c9a-4126-b64b-8cf7d15a16da/11/%3Fi%3D11%26p%3Djv0xb%26s%3Dstyle-jlkxdcvn?fbclid=IwAR0l82Wcpu1BjxHiDPmXfem8FYHcmiwEJ9Q-FbLOC0OFlF9r5EyHWCTLEwA">https://www.artprospect.org/fullscreen-page/comp-jlkxdcvj/e328093e-9c9a-4126-b64b-8cf7d15a16da/11/%3Fi%3D11%26p%3Djv0xb%26s%3Dstyle-jlkxdcvn?fbclid=IwAR0l82Wcpu1BjxHiDPmXfem8FYHcmiwEJ9Q-FbLOC0OFlF9r5EyHWCTLEwA</a></h6>
+<p class="caption"><a href="https://www.artprospect.org/fullscreen-page/comp-jlkxdcvj/e328093e-9c9a-4126-b64b-8cf7d15a16da/11/%3Fi%3D11%26p%3Djv0xb%26s%3Dstyle-jlkxdcvn?fbclid=IwAR0l82Wcpu1BjxHiDPmXfem8FYHcmiwEJ9Q-FbLOC0OFlF9r5EyHWCTLEwA">https://www.artprospect.org/fullscreen-page/comp-jlkxdcvj/e328093e-9c9a-4126-b64b-8cf7d15a16da/11/%3Fi%3D11%26p%3Djv0xb%26s%3Dstyle-jlkxdcvn?fbclid=IwAR0l82Wcpu1BjxHiDPmXfem8FYHcmiwEJ9Q-FbLOC0OFlF9r5EyHWCTLEwA</a></p>
 
-<h6>Показ на фестивале Арт Проспект</h6>
+<p class="caption">Показ на фестивале Арт Проспект</p>
 
-<h6>23.09.2018</h6>
+<p class="caption">23.09.2018</p>
 
-<img src="6253e7_016a1d75174a4256bbdb44ea36e6aa0a.png" alt="file.jpg.png">
+{{< img src="6253e7_016a1d75174a4256bbdb44ea36e6aa0a.png" alt="file.jpg.png" >}}
 
-<h6>Выставка-презентация в ДК Розы</h6>
+<p class="caption">Выставка-презентация в ДК Розы</p>
 
-<h6>09.11.2018 - 25.11.2018</h6>
+<p class="caption">09.11.2018 - 25.11.2018</p>
 
-<h6>Видео с презентации в ДК Розы</h6>
+<p class="caption">Видео с презентации в ДК Розы</p>
 
-<h6>10.11.2018</h6>
+<p class="caption">10.11.2018</p>
 
-<h6><a href="https://www.facebook.com/events/559154391175612/?active_tab=about">https://www.facebook.com/events/559154391175612/?active_tab=about</a></h6>
+<p class="caption"><a href="https://www.facebook.com/events/559154391175612/?active_tab=about">https://www.facebook.com/events/559154391175612/?active_tab=about</a></p>
 
 <p>Отрывок из "Записка Отдела культуры ЦК КПСС «О некоторых вопросах развития современной советской литературы», 27 июля 1956 г</p>
 
@@ -82,9 +82,9 @@ title: "Babushkas"
 – А сколько веков музыка была без нот!<br>
 ...</p>
 
-<img src="6253e7_c630e38604aa4566820ac9a33024e7cc.jpg" alt="">
+{{< img src="6253e7_c630e38604aa4566820ac9a33024e7cc.jpg" alt="" >}}
 
-<img src="6253e7_67f19b2d5a874ea1bc255bbf9c8a8fbf.jpg" alt="">
+{{< img src="6253e7_67f19b2d5a874ea1bc255bbf9c8a8fbf.jpg" alt="" >}}
 
 <p>Проект "Babushkas"рассуждает о современном искусстве, его социальных и этических смыслах в Санкт- Петербурге в 2018 году. Основным материалом, формирующим сюжет выставки, являются записи встреч в досуговом центре, на которых в свободной форме обсуждались наиболее яркие работы в жанре социально-ориентированного искусства. Встречи проходили в раз в неделю в июне и в июле 2018 года. Заверщающей экспозицией стала выставка в пространстве ДК Розы, на которой была представлена видео-инсталляция состоящая из 3-х экранов с дискуссией, видео-интервью участников, зины с публикацией обсуждения, а также круглый стол и лекции. Участники диалогов, благодаря своему уникальному опыту гражданина СССР и Российской Федерации,  рассуждают, задают вопросы, а иногда выносят приговор, что часто бывает за чашкой чая.</p>
 
@@ -92,10 +92,10 @@ title: "Babushkas"
 
 <p>Встречи представлены в форме интервью, зина и видео-инсталляции. Проект "Babushkas", несмотря на то, что основными участниками являются посетители социального центра, отказывается от своей социальной функции в пользу рассуждений о самом себе. Эта инверсия положений позволяет посмотреть на вовлеченность и партисипаторность с другой стороны, и исключить любую возможную в этом случае искусственную отстраненность.</p>
 
-<h6>Исследовательский проект</h6>
+<p class="caption">Исследовательский проект</p>
 
-<h6>2018</h6>
+<p class="caption">2018</p>
 
-<h6>текст, видео, многоканальное видео</h6>
+<p class="caption">текст, видео, многоканальное видео</p>
 
-<h1>BABUSHKAS</h1>
+<p class="lede">BABUSHKAS</p>

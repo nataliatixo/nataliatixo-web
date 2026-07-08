@@ -3,11 +3,11 @@ group: artistic
 title: "Verbatim"
 ---
 
-<h6>Video</h6>
+<p class="caption">Video</p>
 
-<h6>4:30, no audio</h6>
+<p class="caption">4:30, no audio</p>
 
-<h6>2017</h6>
+<p class="caption">2017</p>
 
 <p>The video reconstructs the distance between a modern citizen of St. Petersburg and a resident of the besieged Leningrad. It is constructed from the shots from the everyday life with shots the diary of Lyubov Shaporina who was the citizen of Saint Petersburg during the Blockade of Leningrad.</p>
 
@@ -15,8 +15,8 @@ title: "Verbatim"
 
 <p>The unifying and main “protagonist” in the video is the city, which stores the memory of the Blockade, other tragedies and many unread stories about it.</p>
 
-<img src="6253e7_dbd1868fbf3b4db290f1ff9048aa9f12.jpg" alt="">
+{{< img src="6253e7_dbd1868fbf3b4db290f1ff9048aa9f12.jpg" alt="" >}}
 
-<img src="6253e7_dffbe87cab01456682a2a175995cd776.jpg" alt="">
+{{< img src="6253e7_dffbe87cab01456682a2a175995cd776.jpg" alt="" >}}
 
 <h2>VERBATIM</h2>

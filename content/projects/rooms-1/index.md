@@ -9,14 +9,14 @@ title: "Rooms"
 
 <p>The project creates an art space beyond coordinates and time frames. Representation and its recursion are the main form and content of the project.</p>
 
-<h1>Video</h1>
+<p class="lede">Video</p>
 
-<h1>7:00, no sound</h1>
+<p class="lede">7:00, no sound</p>
 
-<h1>2018</h1>
+<p class="lede">2018</p>
 
-<img src="6253e7_45dd29c171914d81b6d1b9478f619397_d_3000_4000_s_4_2.jpg" alt="">
+{{< img src="6253e7_45dd29c171914d81b6d1b9478f619397_d_3000_4000_s_4_2.jpg" alt="" >}}
 
-<img src="6253e7_27f8a58930d84fd4b85ba3de09b7926d_d_4000_3000_s_4_2.jpg" alt="">
+{{< img src="6253e7_27f8a58930d84fd4b85ba3de09b7926d_d_4000_3000_s_4_2.jpg" alt="" >}}
 
-<h6>ROOMS</h6>
+<p class="caption">ROOMS</p>

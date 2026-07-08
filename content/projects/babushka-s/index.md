@@ -3,25 +3,25 @@ group: artistic
 title: "Babushkas"
 ---
 
-<h6>Meetings in social center, Saint Petersburg</h6>
+<p class="caption">Meetings in social center, Saint Petersburg</p>
 
-<h6>09.06.2018 - 25.07.2018</h6>
+<p class="caption">09.06.2018 - 25.07.2018</p>
 
-<h6>Screening in Art Prospect Festival</h6>
+<p class="caption">Screening in Art Prospect Festival</p>
 
-<h6>23.09.2018</h6>
+<p class="caption">23.09.2018</p>
 
-<img src="6253e7_016a1d75174a4256bbdb44ea36e6aa0a.png" alt="file.jpg.png">
+{{< img src="6253e7_016a1d75174a4256bbdb44ea36e6aa0a.png" alt="file.jpg.png" >}}
 
-<h6>Presentation view in Rosa's House</h6>
+<p class="caption">Presentation view in Rosa's House</p>
 
-<h6>09.11.2018 - 25.11.2018</h6>
+<p class="caption">09.11.2018 - 25.11.2018</p>
 
 <p>Text is not translated yet</p>
 
-<img src="6253e7_c630e38604aa4566820ac9a33024e7cc.jpg" alt="">
+{{< img src="6253e7_c630e38604aa4566820ac9a33024e7cc.jpg" alt="" >}}
 
-<img src="6253e7_67f19b2d5a874ea1bc255bbf9c8a8fbf.jpg" alt="">
+{{< img src="6253e7_67f19b2d5a874ea1bc255bbf9c8a8fbf.jpg" alt="" >}}
 
 <p>The project Babushkas talks about contemporary art, its social and ethical meanings in St. Petersburg in 2018. The main material that builds the exhibition is the recording of meetings happened in the social center for 2 months. During that meetings with the visitors of the centre we've discussed the most known works in the genre of socially-oriented art.</p>
 
@@ -33,10 +33,10 @@ title: "Babushkas"
 
 <p>The "Babushkas" project, despite the fact that the main participants are visitors to the social center, abandons its social function in favor of self-reasoning. This inversion of positions allows you to look at involvement and participation on the other hand, and to exclude any artificial detachment possible in this case.</p>
 
-<h6>Research project</h6>
+<p class="caption">Research project</p>
 
-<h6>2018</h6>
+<p class="caption">2018</p>
 
-<h6>zin, 6 videos, multi-channel installation</h6>
+<p class="caption">zin, 6 videos, multi-channel installation</p>
 
-<h1>BABUSHKAS</h1>
+<p class="lede">BABUSHKAS</p>

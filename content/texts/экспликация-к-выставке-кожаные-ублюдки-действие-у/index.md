@@ -5,7 +5,7 @@ date: 2020-02-04
 categories: ["research"]
 ---
 
-<img src="6253e7_469752bdf07b4f35ba0c803d903c9221.jpg" alt="">
+{{< img src="6253e7_469752bdf07b4f35ba0c803d903c9221.jpg" alt="" >}}
 
 <p><strong>ANTONOV GALLERY</strong></p>
 

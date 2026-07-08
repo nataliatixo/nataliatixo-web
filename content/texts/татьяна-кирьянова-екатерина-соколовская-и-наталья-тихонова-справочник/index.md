@@ -11,19 +11,19 @@ categories: ["research"]
 
 <p>"Spravochnik" runs on <a href="https://ru.wikipedia.org/wiki/Confluence">Confluence</a>, a system used in the IT industry to build internal corporate documentation. In cases where the information is open to all users, Confluence's makers provide their resources for free.<br></p>
 
-<img src="6253e7_f6d35dbc693843368682ef5c93a1f552.png" alt="">
+{{< img src="6253e7_f6d35dbc693843368682ef5c93a1f552.png" alt="" >}}
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/1.png">"Spravochnik" on Confluence</a><br></p>
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/1.png">The idea to create "Spravochnik" came up in February 2020. That winter we came to GTsSI in Saint Petersburg with a proposal to organize meetings for artists and curators on neutral ground, without a set script or moderation — something close to a hobby club, where you could meet informally and discuss problems that mattered and worried us — to set off a process close to "circulation." So we agreed to gather twice a week for meetings we called</a> <a href="https://www.facebook.com/events/223628192375173/">"Natural Circulation."</a> By the way, we argued for a long time about whether to call the meetings "natural" or "artificial," or just "circulation," but decided to cut out the unnecessary puns.</p>
 
-<img src="6253e7_6ea42343d03d4f84a743821c6a162638.jpg" alt="">
+{{< img src="6253e7_6ea42343d03d4f84a743821c6a162638.jpg" alt="" >}}
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">A secret poster for the first meeting. Author: Natasha Khvoenkova</a></p>
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">For the first, test meeting we invited curators and artists we knew and didn't know, and suggested thinking about the format and theme of future events, given that we'd be taking on the role of curators, while GTsSI would help us organize the project with informational support and by sharing its symbolic capital. During the first meeting nothing exactly unexpected happened to us, but it confirmed that it's simply impossible to pin down either a meeting format or common themes that would satisfy the needs of every member of the community.</a></p>
 
-<img src="6253e7_48db85539c3045daaa1d3b662d6fb6fa.jpg" alt="">
+{{< img src="6253e7_48db85539c3045daaa1d3b662d6fb6fa.jpg" alt="" >}}
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">Moodboard from the first meeting</a><br></p>
 
@@ -31,7 +31,7 @@ categories: ["research"]
 
 <p><br></p>
 
-<img src="6253e7_2d97336cdf6844eb9c1ade843d296023.jpg" alt="">
+{{< img src="6253e7_2d97336cdf6844eb9c1ade843d296023.jpg" alt="" >}}
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">A reference point for "Spravochnik"</a></p>
 
@@ -39,7 +39,7 @@ categories: ["research"]
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">After some reflection and discussion, we concluded that even though the art community is fragmented, everyone is, one way or another, united by a shared state of confusion, disconnection, lack of information, and lack of care. So we came up with the idea that the axis around which such meetings and conversations could be built might be the idea of creating, or writing, a "Handbook for curators, artists, and all members of the art community." That way, in the process of making it, we could discuss practical, ethical, philosophical, and other emerging topics, while filling "Spravochnik" with useful information along the way.</a></p>
 
-<img src="6253e7_bb3d514a69af422ba49de9f0eecf1220.jpg" alt="">
+{{< img src="6253e7_bb3d514a69af422ba49de9f0eecf1220.jpg" alt="" >}}
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">From Natalia Tikhonova's project "Advice to an Artist in Twelve Insta-Stories"</a><br></p>
 
@@ -51,7 +51,7 @@ categories: ["research"]
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">A project existing in "wikipedia" format is a synthesis of "relational aesthetics" and technological art, focused on a property of technology — the internet as medium.</a><a href="http://aroundart.org/wp-content/uploads/2020/05/2-1.jpg">On the whole, using technology to exchange and create communication already has a long history: at the dawn of the internet, among engineers — FIDO, the free software movement; among artists — net art and tactical media. Online platforms, besides</a> <a href="http://panthermodern.org/">the search for a new visual language</a>, and <a href="https://www.tate.org.uk/whats-on/tate-modern/performance/bmw-tate-live-2013-performance-room">the creation and determination of affective states</a>, are also used today by artists, curators, and media activists for their "direct purpose" — as <a href="https://monoskop.org/">databases</a>, <a href="http://www.laboriacuboniks.net/">archives</a>, <a href="https://awarewomenartists.com/">forums for declaring</a>, disseminating, and storing their manifestos, projects, political gestures.<br></p>
 
-<img src="6253e7_91dbf3d453154d238ce1a6d17274365e.jpg" alt="">
+{{< img src="6253e7_91dbf3d453154d238ce1a6d17274365e.jpg" alt="" >}}
 
 <p><a href="http://aroundart.org/wp-content/uploads/2020/05/6.jpg">Still from the film "Oil," 2007</a><br></p>
 

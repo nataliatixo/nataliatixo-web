@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-<img src="6253e7_537c2b1751dd47b0a85d41cc7681c768_d_1944_2592_s_2.jpg" alt="Portrait of Natalia Tikhonova">
+{{< img src="6253e7_537c2b1751dd47b0a85d41cc7681c768_d_1944_2592_s_2.jpg" alt="Portrait of Natalia Tikhonova" >}}
 
 <p>Hello!<br>
 <br></p>

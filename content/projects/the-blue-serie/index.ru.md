@@ -3,41 +3,41 @@ group: artistic
 title: "Голубая серия"
 ---
 
-<h6>Инсталляция</h6>
+<p class="caption">Инсталляция</p>
 
-<h6>43 книги, 3 видео со звуком, 7:43, 4:34, 6:43</h6>
+<p class="caption">43 книги, 3 видео со звуком, 7:43, 4:34, 6:43</p>
 
-<h6>Эксперимент в социальной сети</h6>
+<p class="caption">Эксперимент в социальной сети</p>
 
-<h6>2017</h6>
+<p class="caption">2017</p>
 
-<h6>Видео-документация</h6>
+<p class="caption">Видео-документация</p>
 
-<h6>Документация выставки Настоящая небыль,</h6>
+<p class="caption">Документация выставки Настоящая небыль,</p>
 
-<h6>14-ый фестиваль “Современное искусство в традиционном музее”, Санкт-Петербург</h6>
+<p class="caption">14-ый фестиваль “Современное искусство в традиционном музее”, Санкт-Петербург</p>
 
-<h6>февраль, 2017</h6>
+<p class="caption">февраль, 2017</p>
 
-<h6><a href="https://kudago.com/spb/event/vyistavka-nastoyaschaya-nebyil/">https://kudago.com</a></h6>
+<p class="caption"><a href="https://kudago.com/spb/event/vyistavka-nastoyaschaya-nebyil/">https://kudago.com</a></p>
 
-<h6><a href="https://www.dp.ru/a/2017/09/28/Nastojashhaja_nebil">https://www.dp.ru</a></h6>
+<p class="caption"><a href="https://www.dp.ru/a/2017/09/28/Nastojashhaja_nebil">https://www.dp.ru</a></p>
 
-<h6><a href="http://www.proarte.ru/events/nastoyashchaya-nebyl-vystavka-vypusknikov-programmy-shkola-molodogo-khudozhnika-fonda-pro-arte-v-ram/">http://www.proarte.ru</a></h6>
+<p class="caption"><a href="http://www.proarte.ru/events/nastoyashchaya-nebyl-vystavka-vypusknikov-programmy-shkola-molodogo-khudozhnika-fonda-pro-arte-v-ram/">http://www.proarte.ru</a></p>
 
-<h6>Документация выставки 900 and another 25,000 days, Новый музей, Санкт-Петербург</h6>
+<p class="caption">Документация выставки 900 and another 25,000 days, Новый музей, Санкт-Петербург</p>
 
-<h6>Документация выставки Тихие голоса, Красноярский центр искусств, Красноярск</h6>
+<p class="caption">Документация выставки Тихие голоса, Красноярский центр искусств, Красноярск</p>
 
-<h6><a href="http://www.museum.ru/N71074">http://www.museum.ru/N71074</a></h6>
+<p class="caption"><a href="http://www.museum.ru/N71074">http://www.museum.ru/N71074</a></p>
 
-<h6><a href="https://www.redomm.ru/afisha/info/11938/">https://www.redomm.ru/afisha/info/11938/</a></h6>
+<p class="caption"><a href="https://www.redomm.ru/afisha/info/11938/">https://www.redomm.ru/afisha/info/11938/</a></p>
 
-<h6><a href="http://mira1.ru/event/678?special=1">http://mira1.ru/event/678?special=1</a></h6>
+<p class="caption"><a href="http://mira1.ru/event/678?special=1">http://mira1.ru/event/678?special=1</a></p>
 
-<img src="6253e7_d403d705329d42cabad95d25e0ae3f57_d_1800_1953_s_2.jpg" alt="">
+{{< img src="6253e7_d403d705329d42cabad95d25e0ae3f57_d_1800_1953_s_2.jpg" alt="" >}}
 
-<img src="6253e7_b371a55a89ba4d87aa97747761017ae3_d_1800_1202_s_2.jpg" alt="">
+{{< img src="6253e7_b371a55a89ba4d87aa97747761017ae3_d_1800_1202_s_2.jpg" alt="" >}}
 
 <p>Сегодня технологии Big data, позволяющие анализировать огромные массивы данных, участвуют в формировании не только будущего, но ипрошлого. Работают ли технологии в случае, когда человек сталкивается с такими масштабными событиями как война, травма иколлективная память? Этот вопрос я пытаюсь задать в проекте «Голубая серия».  “The blue series” это 42 тома стенографии Нюрнбергскогопроцесса, опубликованные на английском  языке. Изучая текст с помощью программ для обработки текста, проект выстраивает егонелинейный нарратив. Примиряясь с собственной ограниченностью, я пытаюсь описать события с помощью цифр, и возлагаю функциюанализа и принятия на технологию.</p>
 
@@ -47,20 +47,20 @@ title: "Голубая серия"
 
 <p>Последним этапом исследования становится «читальный зал» и сайт, где пустые макеты книг наполняются текстом</p>
 
-<img src="6253e7_be6f0c291eb34d688aff26e88af13c77_d_3096_4128_s_4_2.jpg" alt="The blue series: view of exhibition">
+{{< img src="6253e7_be6f0c291eb34d688aff26e88af13c77_d_3096_4128_s_4_2.jpg" alt="The blue series: view of exhibition" >}}
 
-<img src="6253e7_63572abdf71a4a299443feb06afb2bfb_d_3095_3102_s_4_2.jpg" alt="The blue series">
+{{< img src="6253e7_63572abdf71a4a299443feb06afb2bfb_d_3095_3102_s_4_2.jpg" alt="The blue series" >}}
 
-<img src="6253e7_e3769d74c22d466b80a4244bbf0cb3ed.jpg" alt="16640626_10154895507373467_1557423739804">
+{{< img src="6253e7_e3769d74c22d466b80a4244bbf0cb3ed.jpg" alt="16640626_10154895507373467_1557423739804" >}}
 
-<img src="6253e7_45b823ee3e944df2a7573cbbdc2bfd05_d_1800_1202_s_2.jpg" alt="16836157_1356581577720725_86040732458180">
+{{< img src="6253e7_45b823ee3e944df2a7573cbbdc2bfd05_d_1800_1202_s_2.jpg" alt="16836157_1356581577720725_86040732458180" >}}
 
-<img src="6253e7_af0c8e22032e4aef8e98ef3895e4532e_d_1375_2048_s_2.jpg" alt="16797949_1356583114387238_85163720166166">
+{{< img src="6253e7_af0c8e22032e4aef8e98ef3895e4532e_d_1375_2048_s_2.jpg" alt="16797949_1356583114387238_85163720166166" >}}
 
-<img src="6253e7_f83a7e29e6854cae9c654c0ee32fd5f8.jpg" alt="43151799_10217266567565403_6521863287280">
+{{< img src="6253e7_f83a7e29e6854cae9c654c0ee32fd5f8.jpg" alt="43151799_10217266567565403_6521863287280" >}}
 
-<img src="6253e7_926dbfd9c7b348719307c308ab605d4c.jpg" alt="43064429_10217266568325422_3657055096518">
+{{< img src="6253e7_926dbfd9c7b348719307c308ab605d4c.jpg" alt="43064429_10217266568325422_3657055096518" >}}
 
-<img src="6253e7_903636e3691b455cb783e1ab69326fd0.jpg" alt="43146517_10217266567325397_2200546208005">
+{{< img src="6253e7_903636e3691b455cb783e1ab69326fd0.jpg" alt="43146517_10217266567325397_2200546208005" >}}
 
-<h1>СИНЯЯ СЕРИЯ</h1>
+<p class="lede">СИНЯЯ СЕРИЯ</p>

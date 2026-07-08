@@ -3,17 +3,17 @@ group: artistic
 title: "Something new"
 ---
 
-<img src="6253e7_a009216be1544d12afd0953cfece6a5e_d_1991_3000_s_2.jpg" alt="">
+{{< img src="6253e7_a009216be1544d12afd0953cfece6a5e_d_1991_3000_s_2.jpg" alt="" >}}
 
-<img src="6253e7_de6632747c864ae9b85e4b64342cd51f.jpg" alt="">
+{{< img src="6253e7_de6632747c864ae9b85e4b64342cd51f.jpg" alt="" >}}
 
-<img src="6253e7_ca1d90e45c06409da67dcf1825bea531.jpg" alt="">
+{{< img src="6253e7_ca1d90e45c06409da67dcf1825bea531.jpg" alt="" >}}
 
-<img src="6253e7_5cc4e0711ddc4bfe835c3f7b9d70e336.jpg" alt="">
+{{< img src="6253e7_5cc4e0711ddc4bfe835c3f7b9d70e336.jpg" alt="" >}}
 
-<h6>Installation</h6>
+<p class="caption">Installation</p>
 
-<h6>2016</h6>
+<p class="caption">2016</p>
 
 <p>Something New is the total installation made for DVD Gallery 31st of December, 2016,  just before the  New Year's celebration.</p>
 
@@ -23,7 +23,7 @@ title: "Something new"
 
 <p>The installation hosted guests for the New Year's celebration.</p>
 
-<h6>Video documentation</h6>
+<p class="caption">Video documentation</p>
 
 <h2>SOMETHING</h2>
 

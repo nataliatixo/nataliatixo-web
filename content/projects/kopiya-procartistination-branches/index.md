@@ -3,9 +3,9 @@ group: curatorial
 title: "Procartistination Branches_short"
 ---
 
-<img src="6253e7_c506fa770ebd4f27a7002702383cea44.jpg" alt="81963579_878916575859841_471207678586755">
+{{< img src="6253e7_c506fa770ebd4f27a7002702383cea44.jpg" alt="81963579_878916575859841_471207678586755" >}}
 
-<h1>PROCARTISTINATION BRUNCHES</h1>
+<p class="lede">PROCARTISTINATION BRUNCHES</p>
 
 <p>Procartistination Brunch is an event where, in a semi-professional semi-friendly atmosphere artists, curators,  interested  viewers  discuss articles, news, comments from the world of art at breakfast, passing into lunch.</p>
 

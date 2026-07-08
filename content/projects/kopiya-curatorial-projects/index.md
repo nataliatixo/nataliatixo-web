@@ -3,7 +3,7 @@ group: curatorial
 title: "Radio hopes and dreams. Moscow."
 ---
 
-<img src="6253e7_a46e7be243254f8d8969cd62ee6a629a.jpg" alt="76769670_155581532504158_908406196370040">
+{{< img src="6253e7_a46e7be243254f8d8969cd62ee6a629a.jpg" alt="76769670_155581532504158_908406196370040" >}}
 
 <p><a href="https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams</a></p>
 
@@ -17,4 +17,4 @@ title: "Radio hopes and dreams. Moscow."
 
 <p>Radio Hopes and Dreams will <a href="https://s2.radio.co/s1ee83bdfe/listen">stream live</a> Saturday and Sunday 12:00–18:00 and otherwise program throughout the day and night."</p>
 
-<h1>Заголовок 1</h1>
+<p class="lede">Заголовок 1</p>

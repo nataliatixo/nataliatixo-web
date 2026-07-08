@@ -3,15 +3,15 @@ group: artistic
 title: "Technologies of presence"
 ---
 
-<img src="6253e7_1e98d89a40a7474e9fede69c3350f453.jpg" alt="">
+{{< img src="6253e7_1e98d89a40a7474e9fede69c3350f453.jpg" alt="" >}}
 
-<img src="6253e7_847fb85e2e86433ab6e84cbe2a246f7d_d_4000_3000_s_4_2.jpg" alt="">
+{{< img src="6253e7_847fb85e2e86433ab6e84cbe2a246f7d_d_4000_3000_s_4_2.jpg" alt="" >}}
 
-<h6>Installation, research project</h6>
+<p class="caption">Installation, research project</p>
 
-<h6>2018</h6>
+<p class="caption">2018</p>
 
-<h6>sounds, paper, plastic</h6>
+<p class="caption">sounds, paper, plastic</p>
 
 <p>Technologies and devices for protecting their own territory were developed by hunman since the beginning of civilization. Aimed at a potential material or immaterial  enemy, their goal was more often only to show that the territory is occupied than actually resisting the invasion. This archaic tradition of protecting territories with the help of imitating of human presence has formed its own culture, which has its own characteristics in different times and places. This phenomenon of " technologies of presence" is being studied in the project.</p>
 
@@ -21,7 +21,7 @@ title: "Technologies of presence"
 
 <p>The project of "technology of presence" studies the phenomenon of visualization of means of protection, having the archaic nature of imitation of human life activity. As a result, the exhibition will feature sound installations created with the help of technologies used to protect the territories.</p>
 
-<h6>View of installation of the project on Shelter festival 2018, Helsinki<br></h6>
+<p class="caption">View of installation of the project on Shelter festival 2018, Helsinki<br></p>
 
 <h3>Technology of</h3>
 

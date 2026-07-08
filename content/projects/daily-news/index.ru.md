@@ -3,11 +3,11 @@ group: artistic
 title: "Новости Луганска"
 ---
 
-<h6>Инсталляция, два видео</h6>
+<p class="caption">Инсталляция, два видео</p>
 
-<h6>1:53, 1:53, звук</h6>
+<p class="caption">1:53, 1:53, звук</p>
 
-<h6>2014</h6>
+<p class="caption">2014</p>
 
 <p>Проект «Новости Луганска» посвящен теме освещения вооруженного конфликта на востоке Украины в апреле 2014 года и освещение событий СМИ.</p>
 
@@ -15,22 +15,22 @@ title: "Новости Луганска"
 
 <p>Видео деконструирует приемы, которая использует пропаганда, настраивая оптику через терминологию. Одни и те же кадры, с одними и теми же сюжетами, приобретают противоположный контекст, искажающий cмысл событий.</p>
 
-<h6>Документация выставки Leaving Tomorrow,</h6>
+<p class="caption">Документация выставки Leaving Tomorrow,</p>
 
-<h6>финальная выставка проекта Старт, Винзавод, Москва,</h6>
+<p class="caption">финальная выставка проекта Старт, Винзавод, Москва,</p>
 
-<h6>октябрь, 2015</h6>
+<p class="caption">октябрь, 2015</p>
 
-<h6><a href="https://mos-holidays.ru/vystavka-leaving-tomorrow-v-csi-vinzavod/">https://mos-holidays.ru/vystavka-leaving-tomorrow-v-csi-vinzavod/</a></h6>
+<p class="caption"><a href="https://mos-holidays.ru/vystavka-leaving-tomorrow-v-csi-vinzavod/">https://mos-holidays.ru/vystavka-leaving-tomorrow-v-csi-vinzavod/</a></p>
 
-<h6><a href="https://kudamoscow.ru/event/vystavka-leaving-tomorrow/">https://kudamoscow.ru/event/vystavka-leaving-tomorrow/</a></h6>
+<p class="caption"><a href="https://kudamoscow.ru/event/vystavka-leaving-tomorrow/">https://kudamoscow.ru/event/vystavka-leaving-tomorrow/</a></p>
 
-<h6><a href="http://aroundart.org/2015/10/30/leaving-tomorrow/">http://aroundart.org/2015/10/30/leaving-tomorrow/</a></h6>
+<p class="caption"><a href="http://aroundart.org/2015/10/30/leaving-tomorrow/">http://aroundart.org/2015/10/30/leaving-tomorrow/</a></p>
 
-<img src="6253e7_c84bf613c5324e3c8243ff1e9507c2f0.jpg" alt="News of Lugansk">
+{{< img src="6253e7_c84bf613c5324e3c8243ff1e9507c2f0.jpg" alt="News of Lugansk" >}}
 
-<img src="6253e7_acb263453e2c4c75b2fdfcec51b15ca3.jpg" alt="News of Lugansk">
+{{< img src="6253e7_acb263453e2c4c75b2fdfcec51b15ca3.jpg" alt="News of Lugansk" >}}
 
-<img src="6253e7_39b205b1d4754c278d8dce154820b62c.jpg" alt="News of Lugansk">
+{{< img src="6253e7_39b205b1d4754c278d8dce154820b62c.jpg" alt="News of Lugansk" >}}
 
 <h2>НОВОСТИ ЛУГАНСКА</h2>

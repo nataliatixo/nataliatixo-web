@@ -3,9 +3,9 @@ group: artistic
 title: "Вы можете это потрогать"
 ---
 
-<h6>Инсталляция</h6>
+<p class="caption">Инсталляция</p>
 
-<h6>Рельеф: гипс, краска, видео 1:09, sound</h6>
+<p class="caption">Рельеф: гипс, краска, видео 1:09, sound</p>
 
 <p>Инсталляция “Вы можете это потрогать” состоит из двух объектов – видео и рельеф.</p>
 
@@ -15,8 +15,8 @@ title: "Вы можете это потрогать"
 
 <h2>Excursion through the exhibition</h2>
 
-<img src="6253e7_3132e283340c4a08bb007f70a46bfcec_d_2048_1365_s_2.jpg" alt="">
+{{< img src="6253e7_3132e283340c4a08bb007f70a46bfcec_d_2048_1365_s_2.jpg" alt="" >}}
 
-<img src="6253e7_aa7c9acfafaa4f379b220eb62edfcc12_d_2048_1365_s_2.jpg" alt="">
+{{< img src="6253e7_aa7c9acfafaa4f379b220eb62edfcc12_d_2048_1365_s_2.jpg" alt="" >}}
 
 <h2>ВЫ МОЖЕТЕ ЭТО ПОТРОГАТЬ</h2>
