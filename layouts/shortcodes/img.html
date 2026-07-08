@@ -9,6 +9,9 @@
 {{- $alt := .Get "alt" | default "" | htmlUnescape -}}
 {{- $img := .Page.Resources.Get $src -}}
 {{- if and $img (ne $img.MediaType.SubType "gif") -}}
+  {{- /* Apply EXIF rotation first: Hugo strips EXIF without applying it,
+       so camera uploads would otherwise render sideways. */ -}}
+  {{- $img = $img.Filter images.AutoOrient -}}
   {{- $full := $img -}}
   {{- if gt $img.Width 1400 -}}
     {{- $full = $img.Resize "1400x webp q82" -}}

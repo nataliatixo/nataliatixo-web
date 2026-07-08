@@ -172,6 +172,9 @@ a:hover { text-decoration-color: currentColor; }
 
 .child-list img {
   width: 100%;
+  /* height:auto so aspect-ratio wins over the HTML height attribute
+     (an explicit height disables aspect-ratio entirely) */
+  height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   margin: 0;
