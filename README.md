@@ -13,7 +13,7 @@ Wix has no export feature, so this is a two-step migration: mirror the live site
 - [x] Style pass — minimalistic greyscale/light-grey theme (`static/css/style.css`)
 - [x] Full EN/RU blog parity — all 33 posts now exist in both languages (translated by Claude where no native version existed; see `CLAUDE.md` for which posts are original vs. translated)
 - [ ] Videos — 5 Wix videos have placeholder markers (`{{< video >}}` shortcode) on their posts; waiting on you to upload them (YouTube/Vimeo) and drop in the URLs
-- [x] Deploy to GitHub Pages — live at https://minombreespablo.github.io/nataliatixo-web/ (temporary project URL; `baseURL` in `hugo.toml` points there until the custom domain exists)
+- [x] Deploy to GitHub Pages — live at https://nataliatixo.github.io/nataliatixo-web/ (temporary project URL; `baseURL` in `hugo.toml` points there until the custom domain exists)
 - [ ] Point custom domain `nataliatixo.com` (set the domain in repo Settings → Pages, configure DNS, switch `baseURL` back — see the comment in `hugo.toml`) and retire the Wix subscription
 
 ## Stack

@@ -1,7 +1,7 @@
 # Temporary GitHub Pages project URL until the custom domain exists.
 # When nataliatixo.com goes live: change this back to 'https://nataliatixo.com/',
 # set the custom domain in the repo's Pages settings, and point DNS at GitHub.
-baseURL = 'https://minombreespablo.github.io/nataliatixo-web/'
+baseURL = 'https://nataliatixo.github.io/nataliatixo-web/'
 title = 'Natalia Tikhonova'
 
 defaultContentLanguage = 'en'
