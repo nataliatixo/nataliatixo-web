@@ -1,0 +1,8 @@
+# Monthly PRs when the workflow's action versions go stale — keeps runtime
+# deprecations (like the Node 20 sunset) from arriving as deploy annotations.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
