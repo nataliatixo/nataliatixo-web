@@ -23,7 +23,7 @@ title: "Голубая серия"
 
 <p class="caption"><a href="https://www.dp.ru/a/2017/09/28/Nastojashhaja_nebil">https://www.dp.ru</a></p>
 
-<p class="caption"><a href="http://www.proarte.ru/events/nastoyashchaya-nebyl-vystavka-vypusknikov-programmy-shkola-molodogo-khudozhnika-fonda-pro-arte-v-ram/">http://www.proarte.ru</a></p>
+<p class="caption"><a href="https://web.archive.org/web/20180526042624/http://www.proarte.ru:80/events/nastoyashchaya-nebyl-vystavka-vypusknikov-programmy-shkola-molodogo-khudozhnika-fonda-pro-arte-v-ram/">http://www.proarte.ru</a></p>
 
 <p class="caption">Документация выставки 900 and another 25,000 days, Новый музей, Санкт-Петербург</p>
 

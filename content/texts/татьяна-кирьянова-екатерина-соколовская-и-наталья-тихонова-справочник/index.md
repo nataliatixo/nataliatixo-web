@@ -7,7 +7,7 @@ categories: ["research"]
 
 <p><a href="http://aroundart.org/2020/05/20/30-marta-12-maya/?fbclid=IwAR3qVcoZ4mP8YqD3oA7OLjWvwFb6g_cQeJetwcUDZ1s8k1HTuPWGi1MHf1c">http://aroundart.org/2020/05/20/30-marta-12-maya/?fbclid=IwAR3qVcoZ4mP8YqD3oA7OLjWvwFb6g_cQeJetwcUDZ1s8k1HTuPWGi1MHf1c</a></p>
 
-<p>"Spravochnik" ("The Handbook") is a project initiated by independent curators — Tatiana Kiryanova, Ekaterina Sokolovskaya, and me, Natalia Tikhonova — with the support of GTsSI in Saint Petersburg. <a href="https://spbart.atlassian.net/">"Spravochnik"</a> is a platform for exchanging information, opinions, and help, filled in on a "wikipedia" principle by curators, participants, and anonymous users.</p>
+<p>"Spravochnik" ("The Handbook") is a project initiated by independent curators — Tatiana Kiryanova, Ekaterina Sokolovskaya, and me, Natalia Tikhonova — with the support of GTsSI in Saint Petersburg. <a href="https://web.archive.org/web/20201126043910/https://spbart.atlassian.net/wiki">"Spravochnik"</a> is a platform for exchanging information, opinions, and help, filled in on a "wikipedia" principle by curators, participants, and anonymous users.</p>
 
 <p>"Spravochnik" runs on <a href="https://ru.wikipedia.org/wiki/Confluence">Confluence</a>, a system used in the IT industry to build internal corporate documentation. In cases where the information is open to all users, Confluence's makers provide their resources for free.<br></p>
 

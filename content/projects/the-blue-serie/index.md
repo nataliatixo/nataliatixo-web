@@ -27,7 +27,7 @@ title: "The blue series"
 
 <p class="caption">September, 2017</p>
 
-<p class="caption"><a href="http://www.polithistory.ru/museum/news/view.php?id=4548">http://www.polithistory.ru/museum/news/view.php?id=4548</a></p>
+<p class="caption"><a href="https://web.archive.org/web/20190116005719/http://www.polithistory.ru/museum/news/view.php?id=4548">http://www.polithistory.ru/museum/news/view.php?id=4548</a></p>
 
 <p class="caption">Documentation of exhibition  "900 and another 25,000 days"</p>
 

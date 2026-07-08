@@ -5,7 +5,7 @@ title: "Radio hopes and dreams. Moscow."
 
 {{< img src="6253e7_a46e7be243254f8d8969cd62ee6a629a.jpg" alt="76769670_155581532504158_908406196370040" >}}
 
-<p><a href="https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams</a></p>
+<p><a href="https://web.archive.org/web/20221202202507/https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">https://garagemca.org/en/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams</a></p>
 
 <p><a href="https://www.facebook.com/events/431092444424696/">https://www.facebook.com/events/431092444424696/</a></p>
 

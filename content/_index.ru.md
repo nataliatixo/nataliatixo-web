@@ -21,18 +21,18 @@ title: "О себе"
 <p>2017 – 2019  <a href="http://artesliberales.spbu.ru/?set_language=ru&amp;cl=ru">Кураторские исследования</a>, <a href="http://artesliberales.spbu.ru/?set_language=ru&amp;cl=ru">Смольный факультет свободных искусств и наук</a>, совместная программа СПБГУ и Bard College<br>
 2014               Cовместная образовательная программа "Cabinet of curiosity", KUVA (The Finnish Academy of Fine Arts)  PRO ARTE, Helsinki-Saint-Petersburg</p>
 
-<p>2013 – 2015  <a href="http://proarte.ru/projects/art/">Школа молодого художника</a> фонда Про Арте<br>
+<p>2013 – 2015  <a href="https://web.archive.org/web/20230330231852/https://proarte.ru/projects/art/">Школа молодого художника</a> фонда Про Арте<br>
 2011 – 2015  <a href="https://ru.wikipedia.org/wiki/Санкт-Петербургское_художественное_училище_имени_Н._К._Рериха">Санкт-Петербургское художественное училище им. Рериха</a>, факультет живописи</p>
 
 <p>2003 – 2008, <a href="http://www.unn.ru">ННГУ им. Лобачевского</a>, <a href="http://www.rf.unn.ru">радиофизический факультет</a><br></p>
 
 <h2>Избранные кураторские проекты</h2>
 
-<p>cо-куратор<a href="https://garagemca.org/ru/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">"Радио мечты и надежды". Московская версия. Давай поговорим о климате, детка!</a></p>
+<p>cо-куратор<a href="https://web.archive.org/web/20230930060819/https://garagemca.org/ru/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">"Радио мечты и надежды". Московская версия. Давай поговорим о климате, детка!</a></p>
 
 <p>09 - 10 ноября, 2019</p>
 
-<p><a href="https://www.nplusonerooms.info">[N+1]rooms</a><br>
+<p><a href="https://web.archive.org/web/20220120080350/https://www.nplusonerooms.info/">[N+1]rooms</a><br>
 апрель, 2019<br>
 www.nplusonerooms.info<br></p>
 
@@ -60,7 +60,7 @@ www.nplusonerooms.info<br></p>
 
 <h3>2019</h3>
 
-<p>8-10 ноября, cо-курирование двухдневного радио <a href="https://garagemca.org/ru/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">"Мечты и надежды", Московская версия</a>, музей Гараж, Москва</p>
+<p>8-10 ноября, cо-курирование двухдневного радио <a href="https://web.archive.org/web/20230930060819/https://garagemca.org/ru/event/faculty-of-elin-m-r-yen-vister-radio-hopes-and-dreams">"Мечты и надежды", Московская версия</a>, музей Гараж, Москва</p>
 
 <p>3,4,16,17 октября, <a href="/ru/projects/on-line/">перформанс "On line"</a>для выставки <a href="http://kuryokhin.net/impulseexhibition">Импульс</a>, ЦСИ им. Курехина</p>
 
@@ -185,4 +185,4 @@ www.nplusonerooms.info<br></p>
 
 <p><a href="https://syg.ma/@natalia-tikhonova/onlain-platformy-kak-ghibridnyie-formy-vystavok-vstuplieniie-pro-uslovnost">Онлайн-платформы как гибридные формы выставок. Вcтупление «Про условность» для syg.ma</a></p>
 
-<p><a href="http://aroundart.org/2019/07/21/konteksty-i-chuvstva-v-tsifrovom-prostranstve-beseda-natal-i-tihonovoj-i- mihaila-stepanova/">Контексты и чувства в цифровом пространстве.</a><a href="http://aroundart.org/2019/07/21/konteksty-i-chuvstva-v-tsifrovom-prostranstve-beseda-natal-i-tihonovoj-i- mihaila-stepanova/">Беседа Натальи Тихоновой и Михаила Степанова Первая</a> и <a href="http://aroundart.org/2019/08/18/konteksty-i-chuvstva-v-tsifrovom-prostranstve-chast-vtoraya-beseda-natal-i- tihonovoj-i-mihaila-stepanova/">Вторая частьдля  aroundart.org</a></p>
+<p><a href="http://aroundart.org/2019/07/21/konteksty-i-chuvstva-v-tsifrovom-prostranstve-beseda-natal-i-tihonovoj-i-mihaila-stepanova/">Контексты и чувства в цифровом пространстве.</a><a href="http://aroundart.org/2019/07/21/konteksty-i-chuvstva-v-tsifrovom-prostranstve-beseda-natal-i-tihonovoj-i-mihaila-stepanova/">Беседа Натальи Тихоновой и Михаила Степанова Первая</a> и <a href="http://aroundart.org/2019/08/18/konteksty-i-chuvstva-v-tsifrovom-prostranstve-chast-vtoraya-beseda-natal-i-tihonovoj-i-mihaila-stepanova/">Вторая частьдля  aroundart.org</a></p>
