@@ -1,5 +1,17 @@
+{{- /*
+  Video, three forms:
+    {{< video file="video.mp4" >}}          — page-bundle MP4, served natively
+    {{< video src="https://...embed..." >}} — external embed (YouTube/Vimeo iframe)
+    {{< video note="source: ..." >}}        — placeholder while upload is pending
+  Only small files (a few MB) belong in bundles — GitHub blocks files over
+  100 MB and Pages has a ~1 GB site budget; big videos go external.
+*/ -}}
 {{ $src := .Get "src" }}
-{{ if $src }}
+{{ $vid := "" }}
+{{ with .Get "file" }}{{ $vid = $.Page.Resources.Get . }}{{ end }}
+{{ if $vid }}
+<video class="video-local" controls preload="metadata" src="{{ $vid.RelPermalink }}"></video>
+{{ else if $src }}
 <div class="video-embed">
   <iframe src="{{ $src }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

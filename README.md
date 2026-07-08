@@ -14,7 +14,13 @@ Wix has no export feature, so this is a two-step migration: mirror the live site
 - [x] Full EN/RU blog parity — all 33 posts now exist in both languages (translated by Claude where no native version existed; see `CLAUDE.md` for which posts are original vs. translated)
 - [x] Full-res image recovery (2026-07-08) — the mirror only captured resized variants for 80 images (some as 147px thumbnails); re-fetched the true originals from the Wix CDN via `scripts/refetch_originals.py`
 - [x] Performance/SEO pass (2026-07-08) — body images go through an `{{< img >}}` shortcode (WebP, srcset, lazy loading, capped at 1400px); list thumbnails are 400px WebP crops (projects page went from ~10 MB to ~0.4 MB); `hreflang` alternates, Open Graph tags, canonical URLs, per-page descriptions, RSS link, favicon, 404 page; fixed internal links that were missing the `/nataliatixo-web/` subpath prefix (site title, taxonomy links, body links)
-- [ ] Videos — 5 Wix videos have placeholder markers (`{{< video >}}` shortcode) on their posts; waiting on you to upload them (YouTube/Vimeo) and drop in the URLs
+- [x] Small videos self-hosted (2026-07-08) — 3 of the 5 Wix videos were under 3 MB, so they live in their page bundles and play via a native `<video>` tag (`{{< video file="video.mp4" >}}`); no external hosting needed. The Wix CDN serves no better renditions than what the mirror captured (probed: other resolutions 403), so these are the best copies that exist.
+- [ ] Big videos — the remaining 2 are ~650–700 MB lecture recordings, too big for git/Pages (100 MB file limit); waiting on you to upload them (YouTube/Vimeo) and swap each placeholder for `{{< video src="https://...embed-url..." >}}`:
+
+  | Post | File in mirror | Size |
+  |---|---|---|
+  | `content/archive/практическое-занятие-для-студентов-школы-интерпретации-современного-искусства-пайдейя/` | `mirror/video.wixstatic.com/video/6253e7_180f68e5497e4588badb4dc8b65b018b/720p/mp4/file.mp4` | 698 MB |
+  | `content/archive/рассказ-о-проектах-для-студентов-школы-пайдея/` | `mirror/video.wixstatic.com/video/6253e7_8edb03098c884d7e8540aedf268a3235/720p/mp4/file.mp4` | 644 MB |
 - [x] Deploy to GitHub Pages — live at https://nataliatixo.github.io/nataliatixo-web/ (temporary project URL; `baseURL` in `hugo.toml` points there until the custom domain exists)
 - [ ] Point custom domain `nataliatixo.com` (set the domain in repo Settings → Pages, configure DNS, switch `baseURL` back — see the comment in `hugo.toml`) and retire the Wix subscription
 
@@ -49,13 +55,13 @@ content/projects/my-new-work/
 └── photo1.jpg
 ```
 
-Front matter: `title`, plus `group: artistic|curatorial` under `projects/` or `group: poetry|essays` under `texts/`; archive posts take a `date`. Bodies are raw HTML paragraphs (`<p>`, `<p class="lede">` for big statement text, `<p class="caption">` for captions). Images use the shortcode — it handles WebP conversion, responsive sizes, and lazy loading:
+Front matter: `title`, plus `group: artistic|curatorial` under `projects/` or `group: poetry|essays` under `texts/`; archive posts take a `date`. The migrated bodies are raw HTML paragraphs (`<p>`, `<p class="lede">` for big statement text, `<p class="caption">` for captions), but new pages can be written in plain Markdown — both render fine, so don't feel obliged to write HTML. Images use the shortcode — it handles WebP conversion, responsive sizes, and lazy loading:
 
 ```
 {{< img src="photo1.jpg" alt="description of the work" >}}
 ```
 
-Videos stay external: upload to YouTube/Vimeo and embed with `{{< video src="https://...embed-url..." >}}`.
+Small videos (a few MB) can live in the bundle: `{{< video file="video.mp4" >}}` serves them with a native player. Anything big goes external — upload to YouTube/Vimeo and embed with `{{< video src="https://...embed-url..." >}}`. GitHub blocks files over 100 MB and the whole Pages site should stay under ~1 GB.
 
 ## Known content gaps
 

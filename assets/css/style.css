@@ -132,6 +132,14 @@ a:hover { text-decoration-color: currentColor; }
   border: 0;
 }
 
+.video-local {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.75rem 0;
+  background: var(--border);
+}
+
 .video-placeholder {
   color: var(--muted);
   font-style: italic;

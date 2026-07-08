@@ -180,7 +180,12 @@ def clean_block(node) -> list[tuple[str, str]]:
     return out
 
 
-def video_placeholder(node) -> str:
+def video_placeholder(node, dest_dir: Path) -> str:
+    # Small videos live in the page bundle as video.mp4 (committed by hand,
+    # never overwritten here) — reference them so re-runs don't revert to a
+    # placeholder. Big ones (>100 MB, over GitHub's file limit) stay external.
+    if (dest_dir / "video.mp4").is_file():
+        return '{{< video file="video.mp4" >}}'
     src = node.get("src", "")
     m = re.search(r"([a-z.]+\.wixstatic\.com)/video/([^/]+)/", src)
     note = f"source: {m.group(1)}/video/{m.group(2)}/" if m else "source: unknown"
@@ -202,7 +207,7 @@ def extract_media_and_text(nodes, dest_dir: Path) -> str:
                 # through Hugo's pipeline: WebP, srcset, lazy loading.
                 parts.append(f'{{{{< img src="{local}" alt="{esc_attr(alt)}" >}}}}')
         elif node.name == "video":
-            parts.append(video_placeholder(node))
+            parts.append(video_placeholder(node, dest_dir))
         else:
             for key, html in clean_block(node):
                 if key not in seen_text:
