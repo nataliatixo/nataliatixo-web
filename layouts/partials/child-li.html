@@ -4,7 +4,7 @@
 {{- $img := "" }}{{ with .Resources.ByType "image" }}{{ $img = index . 0 }}{{ end }}
 <li>
   <a href="{{ .RelPermalink }}">
-    {{ with $img }}{{ $thumb := (.Filter images.AutoOrient).Fill "400x400 webp q80" }}<img src="{{ $thumb.RelPermalink }}" width="400" height="400" alt="" loading="lazy" decoding="async">{{ else }}<span class="thumb-placeholder" aria-hidden="true"></span>{{ end }}
+    {{- with $img }}{{ $thumb := (.Filter images.AutoOrient).Fill "400x400 webp q80" }}<img src="{{ $thumb.RelPermalink }}" width="400" height="400" alt="" loading="lazy" decoding="async">{{ else }}<span class="thumb-placeholder" aria-hidden="true"></span>{{ end -}}
     <span>{{ .Title }}</span>
   </a>
 </li>

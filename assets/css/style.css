@@ -171,6 +171,9 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 .child-list img {
+  /* block, like .thumb-placeholder, so both tile types share one box
+     structure — inline images add a baseline descender gap */
+  display: block;
   width: 100%;
   /* height:auto so aspect-ratio wins over the HTML height attribute
      (an explicit height disables aspect-ratio entirely) */
@@ -181,11 +184,14 @@ a:hover { text-decoration-color: currentColor; }
   background: var(--border);
 }
 
-/* Grid tile for pages with no image (video-only projects awaiting embeds). */
-.thumb-placeholder {
+/* Grid tile for pages with no image (video-only projects awaiting embeds).
+   span.thumb-placeholder outranks the .child-list span title rule below,
+   which would otherwise add its margin-top to the tile. */
+.child-list span.thumb-placeholder {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
+  margin-top: 0;
   background: var(--border);
 }
 
