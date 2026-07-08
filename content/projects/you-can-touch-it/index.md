@@ -21,8 +21,8 @@ title: "You can touch it"
 
 <h2>Excursion through the exhibition</h2>
 
-{{< img src="6253e7_3132e283340c4a08bb007f70a46bfcec_d_2048_1365_s_2.jpg" alt="" >}}
+{{< img src="6253e7_3132e283340c4a08bb007f70a46bfcec_d_2048_1365_s_2.jpg" alt="Cracked white plaster relief of a Madonna and child hanging on a matching white wall" >}}
 
-{{< img src="6253e7_aa7c9acfafaa4f379b220eb62edfcc12_d_2048_1365_s_2.jpg" alt="" >}}
+{{< img src="6253e7_aa7c9acfafaa4f379b220eb62edfcc12_d_2048_1365_s_2.jpg" alt="Close-up of the relief: faceless heads and joined hands under a web of cracks" >}}
 
 <h2>YOU CAN TOUCH IT</h2>

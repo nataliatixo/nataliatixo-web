@@ -15,8 +15,8 @@ title: "Verbatim"
 
 <p>The unifying and main “protagonist” in the video is the city, which stores the memory of the Blockade, other tragedies and many unread stories about it.</p>
 
-{{< img src="6253e7_dbd1868fbf3b4db290f1ff9048aa9f12.jpg" alt="" >}}
+{{< img src="6253e7_dbd1868fbf3b4db290f1ff9048aa9f12.jpg" alt="Video still: a handwritten page overlaid on winter trees and old facades, a hand writing in cursive" >}}
 
-{{< img src="6253e7_dffbe87cab01456682a2a175995cd776.jpg" alt="" >}}
+{{< img src="6253e7_dffbe87cab01456682a2a175995cd776.jpg" alt="The Verbatim video on a wall screen by a stairwell, the writing hand inset over passing buildings" >}}
 
 <h2>VERBATIM</h2>

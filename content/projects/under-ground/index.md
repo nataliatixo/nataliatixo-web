@@ -3,11 +3,11 @@ group: artistic
 title: "Under ground"
 ---
 
-{{< img src="6253e7_80901958a476461aad24ac441e3f89d2.jpg" alt="" >}}
+{{< img src="6253e7_80901958a476461aad24ac441e3f89d2.jpg" alt="Dark glass box on tall legs, its edges glowing red in the dim room" >}}
 
-{{< img src="6253e7_c4dadf4ece6f42bca40677efb94b57af.jpg" alt="" >}}
+{{< img src="6253e7_c4dadf4ece6f42bca40677efb94b57af.jpg" alt="Through the smoky glass: layered mirrored surfaces with pale-blue stencilled street names drifting in the reflections" >}}
 
-{{< img src="6253e7_d53ed1214df94b239825e89b95167800.jpg" alt="" >}}
+{{< img src="6253e7_d53ed1214df94b239825e89b95167800.jpg" alt="Close-up of the scratched mirror layers, reversed street names in white, the photographer faintly reflected" >}}
 
 <p class="caption">Sculpture</p>
 
