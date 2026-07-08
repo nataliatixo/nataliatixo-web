@@ -10,4 +10,13 @@
      and returns it unchanged, so the prefix must come from baseURL itself. */ -}}
 {{- $prefix := (urls.Parse site.BaseURL).Path | default "/" -}}
 {{- if not (strings.HasSuffix $prefix "/") }}{{ $prefix = printf "%s/" $prefix }}{{ end -}}
-{{- .Content | string | replaceRE `(href|src)="/([^/])` (printf `${1}="%s${2}` $prefix) | safeHTML -}}
+{{- $c := .Content | string -}}
+{{- if ne $prefix "/" -}}
+  {{- /* Shortcode output ({{< img >}}, RelPermalinks) is already prefixed;
+       shield it from the rewrite (RE2 has no lookahead), prefix the rest,
+       then restore. The [^/] guard skips protocol-relative //host URLs. */ -}}
+  {{- $c = replace $c (printf `="%s` $prefix) `="__PREFIXED__/` -}}
+  {{- $c = replaceRE `(href|src)="/([^/])` (printf `${1}="%s${2}` $prefix) $c -}}
+  {{- $c = replace $c `="__PREFIXED__/` (printf `="%s` $prefix) -}}
+{{- end -}}
+{{- $c | safeHTML -}}
