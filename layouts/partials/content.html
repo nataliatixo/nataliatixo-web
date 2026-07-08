@@ -6,5 +6,8 @@
   https://nataliatixo.github.io/nataliatixo-web/. When baseURL sits at a
   domain root the prefix is "/" and this is a no-op.
 */ -}}
-{{- $prefix := "/" | relURL -}}
+{{- /* NB: relURL treats leading-slash input as already server-root-relative
+     and returns it unchanged, so the prefix must come from baseURL itself. */ -}}
+{{- $prefix := (urls.Parse site.BaseURL).Path | default "/" -}}
+{{- if not (strings.HasSuffix $prefix "/") }}{{ $prefix = printf "%s/" $prefix }}{{ end -}}
 {{- .Content | string | replaceRE `(href|src)="/([^/])` (printf `${1}="%s${2}` $prefix) | safeHTML -}}

@@ -1,0 +1,28 @@
+{{- /*
+  Body image: {{< img src="file.jpg" alt="..." >}} where src is a page-bundle
+  resource. Serves a WebP capped at 1400px wide (with a 700px srcset variant
+  for small screens), plus width/height and lazy loading. GIFs (animated) and
+  srcs that don't resolve to a bundle resource pass through untouched.
+  alt values are stored entity-escaped by extract_content.py, hence htmlUnescape.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" | htmlUnescape -}}
+{{- $img := .Page.Resources.Get $src -}}
+{{- if and $img (ne $img.MediaType.SubType "gif") -}}
+  {{- $full := $img -}}
+  {{- if gt $img.Width 1400 -}}
+    {{- $full = $img.Resize "1400x webp q82" -}}
+  {{- else -}}
+    {{- $full = $img.Process "webp q82" -}}
+  {{- end -}}
+  {{- $srcset := "" -}}
+  {{- if gt $full.Width 700 -}}
+    {{- $small := $img.Resize "700x webp q82" -}}
+    {{- $srcset = printf "%s 700w, %s %dw" $small.RelPermalink $full.RelPermalink $full.Width -}}
+  {{- end -}}
+<img src="{{ $full.RelPermalink }}"{{ with $srcset }} srcset="{{ . }}" sizes="(max-width: 767px) 100vw, 688px"{{ end }} width="{{ $full.Width }}" height="{{ $full.Height }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+{{- else if $img -}}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+{{- else -}}
+<img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+{{- end -}}

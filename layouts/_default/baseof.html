@@ -4,7 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
-  {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+  {{- /* Per-page description: front matter, else page text, else site default. */}}
+  {{- $desc := .Description }}
+  {{- if and (not $desc) .IsPage }}{{ $desc = .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 160 }}{{ end }}
+  {{- $desc = $desc | default .Site.Params.description }}
+  <meta name="description" content="{{ $desc }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- /* hreflang: self, each translation, and the EN version as x-default. */}}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{- range .Translations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{- end }}
+  {{- $en := "" }}
+  {{- if eq .Language.Lang "en" }}{{ $en = . }}{{ else }}{{ range .Translations }}{{ if eq .Language.Lang "en" }}{{ $en = . }}{{ end }}{{ end }}{{ end }}
+  {{- with $en }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{- end }}
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:locale" content="{{ replace .Site.Language.Locale "-" "_" }}">
+  {{- /* Preview image: first page-bundle image, else the About-page portrait. */}}
+  {{- $ogSrc := "" }}
+  {{- with .Resources.ByType "image" }}{{ $ogSrc = index . 0 }}{{ end }}
+  {{- if not $ogSrc }}{{ with .Site.Home.Resources.ByType "image" }}{{ $ogSrc = index . 0 }}{{ end }}{{ end }}
+  {{- with $ogSrc }}{{ with .Fill "1200x630 jpg q85" }}
+  <meta property="og:image" content="{{ .Permalink }}">
+  <meta property="og:image:width" content="{{ .Width }}">
+  <meta property="og:image:height" content="{{ .Height }}">
+  {{- end }}{{ end }}
+  {{- with .OutputFormats.Get "rss" }}
+  <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+  {{- end }}
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   {{ partial "lang-redirect.html" . }}
 </head>

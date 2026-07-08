@@ -166,9 +166,17 @@ def clean_block(node) -> list[tuple[str, str]]:
     out = []
     for b in blocks:
         tag = b.name if b.name.startswith("h") else "p"
+        # Wix used h1 for big statement/credit text and h6 for captions —
+        # pure font-size choices, not document structure. Demote them so
+        # pages don't ship multiple <h1>s (the template's title is the h1).
+        attr = ""
+        if tag == "h1":
+            tag, attr = "p", ' class="lede"'
+        elif tag == "h6":
+            tag, attr = "p", ' class="caption"'
         inline = clean_inline(b)
         if inline:
-            out.append((inline.lower(), f"<{tag}>{inline}</{tag}>"))
+            out.append((inline.lower(), f"<{tag}{attr}>{inline}</{tag}>"))
     return out
 
 
@@ -190,7 +198,9 @@ def extract_media_and_text(nodes, dest_dir: Path) -> str:
             if local and local not in emitted_images:
                 emitted_images.add(local)
                 alt = node.get("alt", "") or ""
-                parts.append(f'<img src="{local}" alt="{esc_attr(alt)}">')
+                # {{< img >}} (layouts/shortcodes/img.html) runs the image
+                # through Hugo's pipeline: WebP, srcset, lazy loading.
+                parts.append(f'{{{{< img src="{local}" alt="{esc_attr(alt)}" >}}}}')
         elif node.name == "video":
             parts.append(video_placeholder(node))
         else:

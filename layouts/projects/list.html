@@ -12,12 +12,7 @@
     <h2 class="group-heading">{{ .label }}</h2>
     <ul class="child-list">
       {{ range $pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">
-          {{ with .Resources.ByType "image" }}{{ with index . 0 }}<img src="{{ .RelPermalink }}" alt="" loading="lazy">{{ end }}{{ end }}
-          <span>{{ .Title }}</span>
-        </a>
-      </li>
+      {{ partial "child-li.html" . }}
       {{ end }}
     </ul>
     {{ end }}

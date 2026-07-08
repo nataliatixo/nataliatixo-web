@@ -12,6 +12,8 @@ Wix has no export feature, so this is a two-step migration: mirror the live site
 - [x] Restructure into 4 sections — About · Projects · Texts · Archive (Wix's "blog" was mostly archival material, so its posts were split into Texts (writing by the author) and Archive (activity log); interviews/press live at /press/ and are listed on the About page)
 - [x] Style pass — minimalistic greyscale/light-grey theme (`static/css/style.css`)
 - [x] Full EN/RU blog parity — all 33 posts now exist in both languages (translated by Claude where no native version existed; see `CLAUDE.md` for which posts are original vs. translated)
+- [x] Full-res image recovery (2026-07-08) — the mirror only captured resized variants for 80 images (some as 147px thumbnails); re-fetched the true originals from the Wix CDN via `scripts/refetch_originals.py`
+- [x] Performance/SEO pass (2026-07-08) — body images go through an `{{< img >}}` shortcode (WebP, srcset, lazy loading, capped at 1400px); list thumbnails are 400px WebP crops (projects page went from ~10 MB to ~0.4 MB); `hreflang` alternates, Open Graph tags, canonical URLs, per-page descriptions, RSS link, favicon, 404 page; fixed internal links that were missing the `/nataliatixo-web/` subpath prefix (site title, taxonomy links, body links)
 - [ ] Videos — 5 Wix videos have placeholder markers (`{{< video >}}` shortcode) on their posts; waiting on you to upload them (YouTube/Vimeo) and drop in the URLs
 - [x] Deploy to GitHub Pages — live at https://nataliatixo.github.io/nataliatixo-web/ (temporary project URL; `baseURL` in `hugo.toml` points there until the custom domain exists)
 - [ ] Point custom domain `nataliatixo.com` (set the domain in repo Settings → Pages, configure DNS, switch `baseURL` back — see the comment in `hugo.toml`) and retire the Wix subscription
@@ -32,9 +34,28 @@ hugo server -D
 2. **Rebuild**: `scripts/extract_content.py` (Python, BeautifulSoup) parses the mirror and writes Hugo content bundles under `content/`. Re-run it if the mirror is refreshed; it overwrites existing content files.
 3. **Deploy**: push to `main` — `.github/workflows/deploy.yml` builds with Hugo and deploys via GitHub Actions. Done: live at the temporary project URL above.
 4. **Domain**: set `nataliatixo.com` in repo Settings → Pages, point DNS (A records to GitHub's Pages IPs, CNAME record for `www`), enable HTTPS enforcement, and switch `baseURL` in `hugo.toml` back to `https://nataliatixo.com/`. (`static/CNAME` is just a record of the intended domain — Actions-based deploys ignore that file.)
-5. Only cancel the Wix subscription after everything is verified live.
+5. Only cancel the Wix subscription after everything is verified live. **Before cancelling**: (a) re-run `python3 scripts/refetch_originals.py` once more — it pulls full-res originals from the Wix CDN and stops working when Wix goes away; (b) copy `mirror/` (1.5 GB, gitignored, exists only on this machine) somewhere durable — it is the only offline backup of the Wix originals.
 
 Note: anything dynamic on the Wix site (contact forms, bookings, member areas) has no static equivalent — forms can move to Formspree/mailto; anything more interactive needs a third-party service or gets dropped.
+
+## Adding new content (post-migration)
+
+Once the migration settles, the mirror/extraction pipeline is legacy — new content is hand-authored. Each page is a bundle: a directory with `index.md` (+ `index.ru.md` for the Russian version) and its images alongside.
+
+```
+content/projects/my-new-work/
+├── index.md        # EN
+├── index.ru.md     # RU
+└── photo1.jpg
+```
+
+Front matter: `title`, plus `group: artistic|curatorial` under `projects/` or `group: poetry|essays` under `texts/`; archive posts take a `date`. Bodies are raw HTML paragraphs (`<p>`, `<p class="lede">` for big statement text, `<p class="caption">` for captions). Images use the shortcode — it handles WebP conversion, responsive sizes, and lazy loading:
+
+```
+{{< img src="photo1.jpg" alt="description of the work" >}}
+```
+
+Videos stay external: upload to YouTube/Vimeo and embed with `{{< video src="https://...embed-url..." >}}`.
 
 ## Known content gaps
 

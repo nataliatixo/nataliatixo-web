@@ -87,6 +87,11 @@ a:hover { text-decoration-color: currentColor; }
 
 .content p { margin: 1rem 0; }
 
+/* Wix's fake headings, demoted to semantic <p> by extract_content.py:
+   h1 was big statement/credit text, h6 was captions. */
+.content p.lede { font-size: 1.1rem; line-height: 1.55; }
+.content p.caption { margin: 0.3rem 0; color: var(--muted); font-size: 0.85rem; }
+
 /* About page portrait: a modest fixed-width photo, not a full-width image.
    Scoped to the home page so re-extracted content stays styled. */
 .page-home .content img {
@@ -183,15 +188,6 @@ a:hover { text-decoration-color: currentColor; }
 
 .taxonomy { color: var(--muted); font-size: 0.85rem; }
 .taxonomy a { color: var(--muted); }
-
-.pagination {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2.5rem;
-  list-style: none;
-  padding: 0;
-  font-size: 0.85rem;
-}
 
 .site-footer {
   text-align: center;

@@ -23,6 +23,13 @@ jobs:
         with:
           hugo-version: "0.164.0"
           extended: true
+      # Processed-image cache (resources/_gen is gitignored); without it every
+      # deploy re-encodes all WebP/thumbnail derivatives from scratch.
+      - uses: actions/cache@v4
+        with:
+          path: resources
+          key: hugo-resources-${{ hashFiles('content/**') }}
+          restore-keys: hugo-resources-
       - name: Build
         run: hugo --minify
       - uses: actions/upload-pages-artifact@v3

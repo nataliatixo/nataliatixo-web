@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article class="page page-404">
+  <h1>404</h1>
+  <p>This page doesn't exist. <a href="{{ .Site.Home.RelPermalink }}">Back to the start</a>.</p>
+  <p lang="ru">Такой страницы нет. <a href="{{ "ru/" | relURL }}">Вернуться на главную</a>.</p>
+</article>
+{{ end }}

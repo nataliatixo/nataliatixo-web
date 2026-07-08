@@ -1,0 +1,7 @@
+{{- /* One <li> in a .child-list grid: square WebP thumbnail + title. Takes the child page. */ -}}
+<li>
+  <a href="{{ .RelPermalink }}">
+    {{ with .Resources.ByType "image" }}{{ with index . 0 }}{{ $thumb := .Fill "400x400 webp q80" }}<img src="{{ $thumb.RelPermalink }}" width="400" height="400" alt="" loading="lazy" decoding="async">{{ end }}{{ end }}
+    <span>{{ .Title }}</span>
+  </a>
+</li>
