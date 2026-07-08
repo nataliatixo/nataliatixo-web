@@ -10,7 +10,7 @@ Wix has no export feature, so this is a two-step migration: mirror the live site
 - [x] Review mirrored content, decide structure — Hugo, bilingual EN/RU, ~74 project/bio pages + 33 blog posts
 - [x] Rebuild pages here — Hugo site scaffolded, content extracted via `scripts/extract_content.py`
 - [x] Restructure into 4 sections — About · Projects · Texts · Archive (Wix's "blog" was mostly archival material, so its posts were split into Texts (writing by the author) and Archive (activity log); interviews/press live at /press/ and are listed on the About page)
-- [x] Style pass — minimalistic greyscale/light-grey theme (`static/css/style.css`)
+- [x] Style pass — minimalistic greyscale/light-grey theme (`assets/css/style.css`)
 - [x] Full EN/RU blog parity — all 33 posts now exist in both languages (translated by Claude where no native version existed; see `CLAUDE.md` for which posts are original vs. translated)
 - [x] Full-res image recovery (2026-07-08) — the mirror only captured resized variants for 80 images (some as 147px thumbnails); re-fetched the true originals from the Wix CDN via `scripts/refetch_originals.py`
 - [x] Performance/SEO pass (2026-07-08) — body images go through an `{{< img >}}` shortcode (WebP, srcset, lazy loading, capped at 1400px); list thumbnails are 400px WebP crops (projects page went from ~10 MB to ~0.4 MB); `hreflang` alternates, Open Graph tags, canonical URLs, per-page descriptions, RSS link, favicon, 404 page; fixed internal links that were missing the `/nataliatixo-web/` subpath prefix (site title, taxonomy links, body links)

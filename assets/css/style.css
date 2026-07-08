@@ -181,6 +181,14 @@ a:hover { text-decoration-color: currentColor; }
   background: var(--border);
 }
 
+/* Grid tile for pages with no image (video-only projects awaiting embeds). */
+.thumb-placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--border);
+}
+
 .child-list span { display: block; margin-top: 0.5rem; font-size: 0.85rem; color: var(--muted); }
 .child-list li a:hover span { color: var(--fg); }
 

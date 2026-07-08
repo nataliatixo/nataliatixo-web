@@ -39,7 +39,11 @@
   <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
   {{- end }}
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{- /* Fingerprinted so the URL changes with the content — no stale-cache
+       window after a deploy. */}}
+  {{- with resources.Get "css/style.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+  {{- end }}
   {{ partial "lang-redirect.html" . }}
 </head>
 <body>

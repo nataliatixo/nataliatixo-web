@@ -1,7 +1,10 @@
-{{- /* One <li> in a .child-list grid: square WebP thumbnail + title. Takes the child page. */ -}}
+{{- /* One <li> in a .child-list grid: square WebP thumbnail + title. Takes the
+   child page. Pages with no images (e.g. video-only projects awaiting their
+   external embeds) get a plain grey square so the grid keeps its rhythm. */ -}}
+{{- $img := "" }}{{ with .Resources.ByType "image" }}{{ $img = index . 0 }}{{ end }}
 <li>
   <a href="{{ .RelPermalink }}">
-    {{ with .Resources.ByType "image" }}{{ with index . 0 }}{{ $thumb := (.Filter images.AutoOrient).Fill "400x400 webp q80" }}<img src="{{ $thumb.RelPermalink }}" width="400" height="400" alt="" loading="lazy" decoding="async">{{ end }}{{ end }}
+    {{ with $img }}{{ $thumb := (.Filter images.AutoOrient).Fill "400x400 webp q80" }}<img src="{{ $thumb.RelPermalink }}" width="400" height="400" alt="" loading="lazy" decoding="async">{{ else }}<span class="thumb-placeholder" aria-hidden="true"></span>{{ end }}
     <span>{{ .Title }}</span>
   </a>
 </li>
