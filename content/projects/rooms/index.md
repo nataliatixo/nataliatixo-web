@@ -3,9 +3,9 @@ group: artistic
 title: "Technologies of presence"
 ---
 
-{{< img src="6253e7_1e98d89a40a7474e9fede69c3350f453.jpg" alt="" >}}
+{{< img src="6253e7_1e98d89a40a7474e9fede69c3350f453.jpg" alt="Collage: a concrete slab with an arrow lies across a brown floor in front of black double doors" >}}
 
-{{< img src="6253e7_847fb85e2e86433ab6e84cbe2a246f7d_d_4000_3000_s_4_2.jpg" alt="" >}}
+{{< img src="6253e7_847fb85e2e86433ab6e84cbe2a246f7d_d_4000_3000_s_4_2.jpg" alt="Two weathered grey metal boxes joined on a concrete floor, sheet-metal ramps in the background" >}}
 
 <p class="caption">Installation, research project</p>
 

@@ -15,8 +15,8 @@ title: "Rooms"
 
 <p class="lede">2018</p>
 
-{{< img src="6253e7_45dd29c171914d81b6d1b9478f619397_d_3000_4000_s_4_2.jpg" alt="" >}}
+{{< img src="6253e7_45dd29c171914d81b6d1b9478f619397_d_3000_4000_s_4_2.jpg" alt="A dark attic room with white brick walls; a box glows white from within in the corner" >}}
 
-{{< img src="6253e7_27f8a58930d84fd4b85ba3de09b7926d_d_4000_3000_s_4_2.jpg" alt="" >}}
+{{< img src="6253e7_27f8a58930d84fd4b85ba3de09b7926d_d_4000_3000_s_4_2.jpg" alt="Wall-mounted monitor in a white brick corner showing a nine-frame grid of empty rooms, like CCTV views" >}}
 
 <p class="caption">ROOMS</p>

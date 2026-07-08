@@ -3,13 +3,13 @@ group: artistic
 title: "Something new"
 ---
 
-{{< img src="6253e7_a009216be1544d12afd0953cfece6a5e_d_1991_3000_s_2.jpg" alt="" >}}
+{{< img src="6253e7_a009216be1544d12afd0953cfece6a5e_d_1991_3000_s_2.jpg" alt="A spruce with colored lights and a red star topper touches a huge white inflated form sagging from the ceiling, winter dusk in the window" >}}
 
-{{< img src="6253e7_de6632747c864ae9b85e4b64342cd51f.jpg" alt="" >}}
+{{< img src="6253e7_de6632747c864ae9b85e4b64342cd51f.jpg" alt="The tree on a draped table, its red star pressed into the underside of the white balloon-like ceiling form" >}}
 
-{{< img src="6253e7_ca1d90e45c06409da67dcf1825bea531.jpg" alt="" >}}
+{{< img src="6253e7_ca1d90e45c06409da67dcf1825bea531.jpg" alt="The tree at night lit red and amber under the swollen ceiling form, cold white lights along the windowsill" >}}
 
-{{< img src="6253e7_5cc4e0711ddc4bfe835c3f7b9d70e336.jpg" alt="" >}}
+{{< img src="6253e7_5cc4e0711ddc4bfe835c3f7b9d70e336.jpg" alt="Two people pose playfully on either side of the tree beneath the giant white form filling the ceiling" >}}
 
 <p class="caption">Installation</p>
 

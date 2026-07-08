@@ -22,17 +22,17 @@ The action starts with the phrase “Sometimes behave so strangely” that mus
 
 <p class="lede">Photoshoot from Valeria Hope</p>
 
-{{< img src="6253e7_fb1f79608a80449e88b40754201b445c_d_4016_6016_s_4_2.jpg" alt="afisha" >}}
+{{< img src="6253e7_fb1f79608a80449e88b40754201b445c_d_4016_6016_s_4_2.jpg" alt="Exhibition poster on a white doorframe: 'Sometimes behave so strangely' in Russian and English with dates and scattered wireframe rectangles" >}}
 
-{{< img src="6253e7_b368fd27a083463386c771e592d91ad6_d_6016_4016_s_4_2.jpg" alt="" >}}
+{{< img src="6253e7_b368fd27a083463386c771e592d91ad6_d_6016_4016_s_4_2.jpg" alt="The poster by the entrance doorway, raw boards and black plastic sheeting visible through the opening" >}}
 
-{{< img src="6253e7_54ee1bddd09540be848c023d744da511_d_6016_4016_s_4_2.jpg" alt="sometimes behave so strangely" >}}
+{{< img src="6253e7_54ee1bddd09540be848c023d744da511_d_6016_4016_s_4_2.jpg" alt="Inside the installation: a bright blank screen and an oval mirror on a white wall, dark panels and a monitor on the left" >}}
 
-{{< img src="6253e7_efd21800135c434ba54fec55c0faaa3a.jpg" alt="" >}}
+{{< img src="6253e7_efd21800135c434ba54fec55c0faaa3a.jpg" alt="Green-lit corner: a small screen shows people on a subway, reflected in a round mirror, another display glows teal beside it" >}}
 
-{{< img src="6253e7_adcdcfe783634e119bf1124b639c5294.jpg" alt="" >}}
+{{< img src="6253e7_adcdcfe783634e119bf1124b639c5294.jpg" alt="Wall monitor with a blurry video still of passengers in winter coats on a subway bench" >}}
 
-{{< img src="6253e7_c4bfba510241430d8280efe25741aa5b.jpg" alt="" >}}
+{{< img src="6253e7_c4bfba510241430d8280efe25741aa5b.jpg" alt="Dark mirrored corridor with small vertical screens glowing on black walls, a window with city lights reflected at left" >}}
 
 <p class="caption">SOMETIMES</p>
 
