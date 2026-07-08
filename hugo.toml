@@ -6,6 +6,7 @@ title = 'Natalia Tikhonova'
 
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
+enableRobotsTXT = true  # layouts/robots.txt — advertises the sitemap
 
 [taxonomies]
 category = 'categories'
