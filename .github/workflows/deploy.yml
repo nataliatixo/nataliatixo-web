@@ -3,6 +3,13 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches: [main]
+    # Skip files that never feed the Hugo build (blocklist, not a paths:
+    # allowlist, so a new site-affecting path can't be silently forgotten).
+    # Mixed pushes still build: the filter checks the whole push's files.
+    paths-ignore:
+      - "README.md"
+      - "CLAUDE.md"
+      - "scripts/**"
   workflow_dispatch:
 
 permissions:
