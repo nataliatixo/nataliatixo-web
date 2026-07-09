@@ -38,7 +38,7 @@ hugo server -D
 
 ## Migration plan
 
-1. **Extract**: `scripts/mirror.sh` runs `wget --mirror` against the live site into `mirror/` (gitignored — it's a scratch archive, not the deployable site), including Wix's CDN hosts so media downloads alongside HTML. Also manually export anything only in the Wix dashboard: blog drafts, form submissions, full-res media library originals (the mirror only captures web-resolution images, not true originals).
+1. **Extract**: `scripts/mirror.sh` runs `wget --mirror` against the live site into `mirror/` (gitignored — it's a scratch archive, not the deployable site), including Wix's CDN hosts so media downloads alongside HTML. Also manually export anything only in the Wix dashboard: blog drafts (the 3 dead 2018 posts) and form submissions. Full-res media originals used to be dashboard-only too, but `scripts/refetch_originals.py` has since recovered them straight from the Wix CDN.
 2. **Rebuild**: `scripts/extract_content.py` (Python, BeautifulSoup) parses the mirror and writes Hugo content bundles under `content/`. Re-run it if the mirror is refreshed; it overwrites existing content files.
 3. **Deploy**: push to `main` — `.github/workflows/deploy.yml` builds with Hugo, checks every internal link with htmltest (config in `.htmltest.yml`; a broken link fails the build before anything deploys), and deploys via GitHub Actions. Done: live at the temporary project URL above.
 4. **Domain**: set `nataliatixo.com` in repo Settings → Pages, point DNS (A records to GitHub's Pages IPs, CNAME record for `www`), enable HTTPS enforcement, and switch `baseURL` in `hugo.toml` back to `https://nataliatixo.com/`. (`static/CNAME` is just a record of the intended domain — Actions-based deploys ignore that file.)
