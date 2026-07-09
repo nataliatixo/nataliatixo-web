@@ -67,9 +67,8 @@ Small videos (a few MB) can live in the bundle: `{{< video file="video.mp4" >}}`
 
 ## Known content gaps
 
-A handful of URLs are broken on the *live* Wix site itself (confirmed via literal "404" markers in the mirrored HTML), not lost in extraction:
+A handful of URLs are broken on the *live* Wix site itself (confirmed via literal "404" markers in the mirrored HTML), not lost in extraction. Most have since been resolved:
 
-- 3 old blog posts under date-prefixed URLs (`post/2018/12/06/...`, `post/2018/12/27/...`)
-- The Russian translations of `kopiya-curatorial-projects`, `kopiya-procartistination-branches`, and `poeticaltexts` (English versions are fine)
-
-If these matter, they'd need to be recovered from the Wix dashboard directly — the live site no longer serves them.
+- The Russian translations of `kopiya-curatorial-projects` and `kopiya-procartistination-branches` — **closed 2026-07-09** by translating the intact English pages (Claude-translated, not native-proofread).
+- `poeticaltexts` — needed nothing: it was only a Wix hub page (a heading plus links to the poetry posts), a role the Texts section list now fills.
+- 3 old blog posts under date-prefixed URLs (`post/2018/12/06/...`, `post/2018/12/27/...`) — **still gone**; no language version survives in the mirror, so recovery is only possible from the Wix dashboard directly, before the subscription is cancelled.
