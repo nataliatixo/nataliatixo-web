@@ -9,6 +9,7 @@ on:
     paths-ignore:
       - "README.md"
       - "CLAUDE.md"
+      - "AGENTS.md"
       - "scripts/**"
   workflow_dispatch:
 
