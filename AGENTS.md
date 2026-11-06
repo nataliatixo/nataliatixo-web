@@ -14,7 +14,7 @@ Content has been mirrored (`mirror/`, gitignored) and extracted into a working H
 
 ## Stack
 
-Hugo (no npm, no third-party theme — hand-written minimal layouts). Local Hugo binary lives at `~/.local/bin/hugo` (installed by downloading the extended release directly, not via apt, since apt required sudo). `hugo.toml` needs `[markup.goldmark.renderer] unsafe = true` because content bodies are raw HTML (see below), not Markdown syntax.
+Hugo (no npm, no third-party theme — hand-written minimal layouts). Use the extended Hugo release. `hugo.toml` needs `[markup.goldmark.renderer] unsafe = true` because content bodies are raw HTML (see below), not Markdown syntax.
 
 Body images go through `layouts/shortcodes/img.html` (`{{< img src="..." alt="..." >}}`): Hugo's image pipeline emits WebP capped at 1400px with a 700px srcset variant, `width`/`height` attributes, and lazy loading; animated GIFs and srcs that aren't bundle resources pass through untouched. List thumbnails come from `layouts/partials/child-li.html` (400×400 WebP `.Fill`). Processed derivatives land in `resources/_gen` (gitignored; CI caches it via `actions/cache` keyed on `content/**`).
 
@@ -42,7 +42,7 @@ Each leaf page is a **page bundle** (`index.md` + copied images alongside), not 
 
 ### Content extraction (`scripts/extract_content.py`)
 
-Run with a venv that has `beautifulsoup4` + `lxml` (not system Python — Debian blocks plain `pip install`). Re-run after re-mirroring; by default it only writes `.md` files that don't exist yet (see the `--force` note below).
+Run with a venv that has `beautifulsoup4` + `lxml` (not system Python, which may block plain `pip install`). Re-run after re-mirroring; by default it only writes `.md` files that don't exist yet (see the `--force` note below).
 
 What it does, per mirrored HTML page:
 - Title from the `<title>` tag (strips the ` | nataliatixo` suffix, capitalizes if all-lowercase).
